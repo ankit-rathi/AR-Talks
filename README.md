@@ -1,3 +1,3 @@
-# My-Presentations
+# My-Presentations-Talks
 
-Repository of the presentations I delivered.
+Repository of the presentations/talks I delivered.
