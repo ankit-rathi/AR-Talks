@@ -1,9 +1,17 @@
 
 Pillars
 - Health
+  - The Fitness Mindset by Brian Keane
+  - Glute Lab by Bret Contreras
+  - Ready to Run by Kelly Starrett
+  - Fitness on the Go by Abhishek Sharma
+  - Companion to Yoga by Sivananda
+  - How Not to Die by Michael Greger
 - 
   - Diet, Excercise and Rest
 - Relationships
+  - How To Win Friends And Influence People by Dale Carnegie
+  - The 5 Love Languages by Gary Chapman
   Family and Friends
 - Career
   
@@ -34,9 +42,6 @@ Self Esteem
 - Big Magic by Elizabeth Gilbert
 - Quiet by Susan Cain
 - The Magic Of Thinking Big by David Joseph Schwartz
-Relationships
-- How To Win Friends And Influence People by Dale Carnegie
-- The 5 Love Languages by Gary Chapman
 Productivity
 - Deep Work by Cal Newport
 - Getting Things Done by David Allen
