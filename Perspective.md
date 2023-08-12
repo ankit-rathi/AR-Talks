@@ -1,8 +1,9 @@
 
-Pillars
+5 Pillars of Perspective
+
 - Health
   - The Fitness Mindset by Brian Keane
-  - Glute Lab by Bret Contreras
+  - Bigger, Leaner, Stronger by Michael Matthews
   - Ready to Run by Kelly Starrett
   - Fitness on the Go by Abhishek Sharma
   - Companion to Yoga by Sivananda
@@ -21,13 +22,17 @@ Pillars
     
 - Wealth
   - Rich Dad Poor Dad by Robert T. Kiyosaki
+  - The Psychology of Money by Morgan Housel
   - Think And Grow Rich by Napoleon Hill
   - The Joys of Compounding by Gautam Baid
-  - The Psychology of Money by Morgan Housel
+
     
 - Goodwill
   - The Power Of Positive Thinking by Norman Vincent Peale
   - The Secret by Rhonda Byrne
+  - The Good Life by Robert and Marc
+  - Lifespan by David & Matthew
+  - Outlive by Peter and Bill
     
 Core Ideas: System/Process, Balance, T-Shaped, Compounding, Intertia, Focus, 80/20
 
