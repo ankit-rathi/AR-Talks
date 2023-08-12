@@ -6,28 +6,37 @@ Pillars
   - Ready to Run by Kelly Starrett
   - Fitness on the Go by Abhishek Sharma
   - Companion to Yoga by Sivananda
-  - How Not to Die by Michael Greger
-- 
-  - Diet, Excercise and Rest
+  - How Not to Die by Michael Grege
+    
 - Relationships
   - How To Win Friends And Influence People by Dale Carnegie
   - The 5 Love Languages by Gary Chapman
-  Family and Friends
-- Career
-  
-- Wealth
-  
-- Goodwill
 
+- Career
+  - Atomic Habits by James Clear
+  - The 7 Habits Of Highly Effective People by Stephen R. Covey
+  - Deep Work by Cal Newport
+  - Getting Things Done by David Allen
+  - Who Moved My Cheese by Spencer Johnson
+    
+- Wealth
+  - Rich Dad Poor Dad by Robert T. Kiyosaki
+  - Think And Grow Rich by Napoleon Hill
+  - The Joys of Compounding by Gautam Baid
+  - The Psychology of Money by Morgan Housel
+    
+- Goodwill
+  - The Power Of Positive Thinking by Norman Vincent Peale
+  - The Secret by Rhonda Byrne
+    
 Core Ideas: System/Process, Balance, T-Shaped, Compounding, Intertia, Focus, 80/20
 
 References:
 Overall
 - The Alchemist by Paulo Coelho
-- Atomic Habits by James Clear
+
 - Thinking Fast And Slow by Daniel Kahneman
 - The Four Agreements by Don Miguel Ruiz
-- The 7 Habits Of Highly Effective People by Stephen R. Covey
 - Best Self by Mike Bayer
 - The Subtle Art of Not Giving a F*ck by Mark Manson
 Men
@@ -43,18 +52,11 @@ Self Esteem
 - Quiet by Susan Cain
 - The Magic Of Thinking Big by David Joseph Schwartz
 Productivity
-- Deep Work by Cal Newport
-- Getting Things Done by David Allen
-- Who Moved My Cheese by Spencer Johnson
-Money
-- Rich Dad Poor Dad by Robert T. Kiyosaki
-- Think And Grow Rich by Napoleon Hill
+
 Business
 - The 4-Hour Workweek by Tim Ferriss
 - Outliers by Malcolm Gladwell
 Positive Thinking
-- The Power Of Positive Thinking by Norman Vincent Peale
-- The Secret by Rhonda Byrne
 - Stoicism
 - Meditations by Marcus Aurelius
 - The Obstacle Is The Way by Ryan Holiday
