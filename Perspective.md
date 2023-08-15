@@ -65,9 +65,19 @@ Positive Thinking
 - Stoicism
 - Meditations by Marcus Aurelius
 - The Obstacle Is The Way by Ryan Holiday
+
+
+
 Mindfulness
 - The Power Of Now by Eckhart Tolle
 - The Life-Changing Magic Of Tidying Up by Marie Kondo
 Bonus: 2-Minute Pep Talks by Niklas Göke
+------------------------------------------------------------
 
-
+The Fitness Mindset by Brian Keane
+  - Mental hang-ups
+  - Inflated expectations
+  - All or nothing
+  - Unsustainable approach
+  - Nutritions and Supplements
+  - Adequate sleep and rest
