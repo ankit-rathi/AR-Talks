@@ -8,7 +8,7 @@ Play a sport instead of exercise.
 
 Walk barefoot, expose yourself to sunlight, cold and rain.
 
-Stay in natural environment, even if it is not sterile and clean, it trains your immune system.
+Stay in natural environment for some time, even if it is not sterile and clean, it trains your immune system.
 
 Stay in smaller tribes, mainly surrounded by family members,  friends and relatives.
 
