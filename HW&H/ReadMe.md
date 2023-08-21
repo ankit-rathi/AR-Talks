@@ -10,7 +10,9 @@ Health
   - Relaxation
 
 - Mental Health
-- 
+  - Burnout
+  - Overthinking
+  - Stress
 
 - Spiritual Health
 
