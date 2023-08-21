@@ -74,10 +74,5 @@ Mindfulness
 Bonus: 2-Minute Pep Talks by Niklas Göke
 ------------------------------------------------------------
 
-The Fitness Mindset by Brian Keane
-  - Mental hang-ups
-  - Inflated expectations
-  - All or nothing
-  - Unsustainable approach
-  - Nutritions and Supplements
-  - Adequate sleep and rest
+References:
+ - Mental Health Prevention (https://www.mentalhealth.org.uk/explore-mental-health/publications/our-best-mental-health-tips)
