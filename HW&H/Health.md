@@ -19,3 +19,12 @@ In nature, it’s very rare to find carbs and fat together, avoid them together.
 Most fit and healthy people focus much more on what they eat than how much. 
 
 “Easy choices, hard life. Hard choices, easy life.” 
+
+Balanced Diet: Macro (Carbs, Fat, Protein and Fiber) and Micro (Vitamins and Minerals) Nutrients
+
+Physical Health: Cardio, Strength and Flexibility
+
+Mental Health: Pranayam and Meditation
+
+Spiritual Health: ??
+
