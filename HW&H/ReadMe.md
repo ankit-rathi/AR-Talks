@@ -10,6 +10,7 @@ Health
   - Relaxation
 
 - Mental Health
+  - Understanding Mental Health
   - Overthinking, Burnout and Stress
   - CBT
   - Yoga
