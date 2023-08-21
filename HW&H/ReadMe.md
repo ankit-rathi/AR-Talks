@@ -10,9 +10,11 @@ Health
   - Relaxation
 
 - Mental Health
-  - Burnout
-  - Overthinking
-  - Stress
+  - Overthinking, Burnout and Stress
+  - CBT
+  - Yoga
+  - Relaxation
+  - Mindfulness
 
 - Spiritual Health
 
