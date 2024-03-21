@@ -1,7 +1,8 @@
 import json
 import os
+import shutil
 
-def extract_text_from_json(input_location, json_file, key, output_location):
+def extract_text_and_move_json(input_location, json_file, key, output_location, archive_location):
     # Construct the full path to the JSON file
     json_file_path = os.path.join(input_location, json_file)
 
@@ -31,10 +32,16 @@ def extract_text_from_json(input_location, json_file, key, output_location):
 
     print(f"Extracted text saved to {output_text_file}")
 
-# Example usage
-input_location = '/path/to/input/directory'  # Path to input directory containing JSON file
-json_file = 'example.json'                    # JSON file name
-key = 'text'                                  # Key to extract text from JSON
-output_location = '/path/to/output/directory'  # Path to output directory to save the text file
+    # Move processed JSON file to archive location
+    archive_json_file_path = os.path.join(archive_location, json_file)
+    shutil.move(json_file_path, archive_json_file_path)
+    print(f"Processed JSON file moved to {archive_json_file_path}")
 
-extract_text_from_json(input_location, json_file, key, output_location)
+# Example usage
+input_location = '/path/to/input/directory'      # Path to input directory containing JSON file
+json_file = 'example.json'                        # JSON file name
+key = 'text'                                      # Key to extract text from JSON
+output_location = '/path/to/output/directory'     # Path to output directory to save the text file
+archive_location = '/path/to/archive/directory'   # Path to archive directory
+
+extract_text_and_move_json(input_location, json_file, key, output_location, archive_location)
