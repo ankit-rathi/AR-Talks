@@ -1,107 +1,52 @@
 import datetime
 
-# Define the available weekdays and time windows
-available_schedule = {
-    "Monday": [(8, 0), (12, 0)],   # Example: Monday from 8:00 AM to 12:00 PM
-    "Tuesday": [(8, 0), (12, 0)],  # Example: Tuesday from 8:00 AM to 12:00 PM
-    "Wednesday": [],               # Example: Wednesday unavailable
-    "Thursday": [(8, 0), (12, 0)], # Example: Thursday from 8:00 AM to 12:00 PM
-    "Friday": [(8, 0), (12, 0)]     # Example: Friday from 8:00 AM to 12:00 PM
-    # Add more days and time windows as needed
-}
+def find_next_available_time(input_json):
+    # Extract values from input JSON
+    include_exclude = input_json.get('include_exclude', 'include')
+    weekdays = input_json.get('weekdays', [])
+    start_time = input_json.get('start_time', '00:00')
+    end_time = input_json.get('end_time', '23:59')
 
-def find_next_available_datetime():
+    # Convert start_time and end_time to datetime.time objects
+    start_hour, start_minute = map(int, start_time.split(':'))
+    end_hour, end_minute = map(int, end_time.split(':'))
+    start_time_obj = datetime.time(start_hour, start_minute)
+    end_time_obj = datetime.time(end_hour, end_minute)
+
     # Get the current date and time
     current_datetime = datetime.datetime.now()
-    current_weekday = current_datetime.strftime("%A")
 
-    # Check if the current weekday is available
-    if current_weekday in available_schedule:
-        current_time = current_datetime.time()
-        for window_start, window_end in available_schedule[current_weekday]:
-            window_start_time = datetime.time(window_start, 0)
-            window_end_time = datetime.time(window_end, 0)
-            if window_start_time <= current_time <= window_end_time:
-                # If current time is within an available window, return the current datetime
-                return current_datetime.replace(second=0, microsecond=0)
-
-        # If the current time is outside of all available windows, find the next available window
-        for window_start, window_end in available_schedule[current_weekday]:
-            window_start_time = datetime.time(window_start, 0)
-            if window_start_time > current_time:
-                next_available_datetime = current_datetime.replace(hour=window_start, minute=0, second=0, microsecond=0)
-                return next_available_datetime
-
-    # If the current weekday is not available or if no available time is found,
-    # find the next available day and time
-    for i in range(1, 8):  # Check the next 7 days
-        next_weekday = datetime.datetime.now() + datetime.timedelta(days=i)
-        next_weekday_str = next_weekday.strftime("%A")
-        if next_weekday_str in available_schedule:
-            next_available_datetime = next_weekday.replace(hour=available_schedule[next_weekday_str][0][0], minute=0, second=0, microsecond=0)
-            return next_available_datetime
+    # Find the next available time
+    if include_exclude == 'include':
+        # Find the next available time for the provided weekdays and time range
+        for i in range(7):  # Check the next 7 days
+            next_date = current_datetime + datetime.timedelta(days=i)
+            next_weekday = next_date.strftime('%a')
+            print(next_weekday)
+            if next_weekday in weekdays:
+                next_available_datetime = datetime.datetime.combine(next_date, start_time_obj)
+                if next_available_datetime > current_datetime:
+                    return next_available_datetime
+    elif include_exclude == 'exclude':
+        # Find the next available time excluding the provided weekdays and time range
+        for i in range(7):  # Check the next 7 days
+            next_date = current_datetime + datetime.timedelta(days=i)
+            next_weekday = next_date.strftime('%a')
+            if next_weekday in weekdays:
+                next_unavailable_datetime = datetime.datetime.combine(next_date, start_time_obj)
+                next_available_datetime = datetime.datetime.combine(next_date, end_time_obj)
+                if next_unavailable_datetime > current_datetime:
+                    return current_datetime
+                else:
+                    return next_available_datetime
 
     # If no available time is found in the next 7 days, return None
     return None
 
 # Test the function
-next_available_datetime = find_next_available_datetime()
+input_json = {'include_exclude':'exclude', 'weekdays':['Mon', 'Tue', 'Wed', 'Thu', 'Fri'], 'start_time':'04:00', 'end_time':'06:00'}
+next_available_datetime = find_next_available_time(input_json)
 if next_available_datetime:
     print("Next available date and time:", next_available_datetime)
 else:
     print("No available time found in the next 7 days.")
-
-
-import datetime
-
-# Define the time windows when the system is not available
-unavailable_windows = {
-    "Monday": [(8, 0), (12, 0)],   # Example: Monday from 8:00 AM to 12:00 PM
-    "Tuesday": [(8, 0), (12, 0)],  # Example: Tuesday from 8:00 AM to 12:00 PM
-    "Wednesday": [],               # Example: Wednesday unavailable
-    "Thursday": [(8, 0), (12, 0)], # Example: Thursday from 8:00 AM to 12:00 PM
-    "Friday": [(8, 0), (12, 0)]     # Example: Friday from 8:00 AM to 12:00 PM
-    # Add more days and time windows as needed
-}
-
-def find_next_available_datetime():
-    # Get the current date and time
-    current_datetime = datetime.datetime.now()
-    current_weekday = current_datetime.strftime("%A")
-
-    # Check if the current time falls within an unavailable window
-    if current_weekday in unavailable_windows:
-        for window_start, window_end in unavailable_windows[current_weekday]:
-            window_start_time = datetime.time(window_start, 0)
-            window_end_time = datetime.time(window_end, 0)
-            if window_start_time <= current_datetime.time() <= window_end_time:
-                # Find the next available time after the current unavailable window
-                next_available_datetime = current_datetime.replace(hour=window_end, minute=0, second=0, microsecond=0)
-                return next_available_datetime
-
-    # If the current time is outside of all defined unavailable windows,
-    # find the next available time slot on the next available weekday
-    current_day_index = datetime.datetime.today().weekday()
-    for i in range(1, 8):  # Check the next 7 days
-        next_day_index = (current_day_index + i) % 7
-        next_weekday = datetime.datetime.now() + datetime.timedelta(days=i)
-        next_weekday_str = next_weekday.strftime("%A")
-        if next_weekday_str in unavailable_windows:
-            continue
-        else:
-            next_available_datetime = next_weekday.replace(hour=0, minute=0, second=0, microsecond=0)
-            return next_available_datetime
-
-    # If no available time is found in the next 7 days, return None
-    return None
-
-# Test the function
-next_available_datetime = find_next_available_datetime()
-if next_available_datetime:
-    print("Next available date and time:", next_available_datetime)
-else:
-    print("No available time found in the next 7 days.")
-
-
-Hello everyone, as Ashish just mentioned that the current theme on Financial well-being would continue next month as well. There, I will share with you about the system I built on Peaceful Tradevesting. Tradevesting, which is an amalgamation of trading and investing in stock market needs not to be stressful, it can be as peaceful as investments in fixed instruments with decent returns if we are methodical and disciplined with our approach. I am really excited and looking forward to talk you next month.
-
