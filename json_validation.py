@@ -52,3 +52,42 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+import jsonschema
+from jsonschema import Draft7Validator, FormatChecker
+from datetime import datetime
+
+# Define a custom format checker function for strict date format
+def is_valid_date(instance):
+    try:
+        datetime.strptime(instance, '%Y-%m-%d')
+        return True
+    except ValueError:
+        return False
+
+# Register the custom format checker for the 'date' format
+format_checker = FormatChecker()
+format_checker.checks('date')(is_valid_date)
+
+# Define your JSON schema with the desired date format
+schema = {
+    "type": "object",
+    "properties": {
+        "date": {"type": "string", "format": "date"}
+    },
+    "required": ["date"]
+}
+
+# Create a JSON object to validate against the schema
+data = {
+    "date": "20-05-30"
+}
+
+# Create a validator with the schema and format checker
+validator = Draft7Validator(schema, format_checker=format_checker)
+errors = validator.iter_errors(data)
+
+# Iterate over any validation errors and print them
+for error in errors:
+    print(error.message)
+
