@@ -101,3 +101,39 @@ emr_step_task = EmrAddStepsOperator(
 
 # Set task dependencies
 start_task >> emr_step_task
+
+
+
+from kafka import KafkaProducer
+from kafka.errors import KafkaError
+
+# Kafka configuration
+conf = {
+    'bootstrap_servers': 'your.kafka.broker:port',
+    'security_protocol': 'SSL',
+    'ssl_cafile': '/path/to/ca-cert',         # Path to CA certificate
+    'ssl_certfile': '/path/to/cert',          # Path to client's public certificate
+    'ssl_keyfile': '/path/to/key',            # Path to client's private key
+    'ssl_password': 'your_key_password',      # Password for the client's private key, if needed
+}
+
+# Create the KafkaProducer instance
+producer = KafkaProducer(**conf)
+
+# Topic and message
+topic = 'your_topic'
+message = 'Hello, Kafka with SSL!'
+
+# Produce the message
+future = producer.send(topic, value=message.encode('utf-8'))
+
+try:
+    # Wait for send to complete
+    record_metadata = future.get(timeout=10)
+    print(f'Message delivered to {record_metadata.topic} partition {record_metadata.partition} offset {record_metadata.offset}')
+except KafkaError as e:
+    print(f'Message delivery failed: {e}')
+finally:
+    # Close the producer
+    producer.close()
+
