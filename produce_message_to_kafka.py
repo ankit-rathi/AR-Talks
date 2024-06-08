@@ -76,14 +76,19 @@ secret_name = "my-ssl-certificates-secret"
 # Get AWS session
 session = get_aws_session(config_file, profile)
 
-# Fetch SSL certificates from AWS Secrets Manager
-ssl_certificates = get_secret(session, secret_name)
+# Fetch SSL certificates and Kafka configuration from AWS Secrets Manager
+secret = get_secret(session, secret_name)
 
-if ssl_certificates:
-    kafka_brokers = 'your_kafka_broker:9093'
-    topic = 'your_kafka_topic'
+if secret:
+    ssl_certificates = {
+        'certificate': secret['certificate'],
+        'private_key': secret['private_key'],
+        'ca_bundle': secret['ca_bundle']
+    }
+    kafka_brokers = secret['kafka_brokers']
+    topic = secret['topic']
     message = {"key": "value"}  # Replace with your JSON message
 
     produce_message_to_kafka(topic, message, kafka_brokers, ssl_certificates)
 else:
-    print("Failed to fetch SSL certificates.")
+    print("Failed to fetch secret.")
