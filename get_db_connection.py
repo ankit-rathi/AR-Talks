@@ -1,38 +1,65 @@
 import boto3
-import psycopg2  # Use pymysql if connecting to MySQL
+import json
+import psycopg2
+from botocore.exceptions import ClientError
 
-def get_db_connection(secret_name, region_name):
+def get_secret(secret_name, region_name):
+    """
+    Fetches a secret from AWS Secrets Manager and returns it as a JSON object.
+    :param secret_name: The name of the secret.
+    :param region_name: The region where the secret is stored.
+    :return: A dictionary containing the secret.
+    """
     # Create a Secrets Manager client
     session = boto3.session.Session()
-    client = session.client(service_name='secretsmanager', region_name=region_name)
-    
+    client = session.client(
+        service_name='secretsmanager',
+        region_name=region_name
+    )
+
     try:
         # Fetch the secret value
-        get_secret_value_response = client.get_secret_value(SecretId=secret_name)
-        secret = get_secret_value_response['SecretString']
-    except Exception as e:
-        print(f"Error retrieving secret: {e}")
-        return None, None
+        response = client.get_secret_value(SecretId=secret_name)
+    except ClientError as e:
+        print(f"Error fetching secret: {e}")
+        return None
 
-    # Parse the secret (assume it's in JSON format)
-    import json
-    secret_dict = json.loads(secret)
+    # Parse the secret
+    if 'SecretString' in response:
+        secret = response['SecretString']
+        return json.loads(secret)
+    else:
+        decoded_binary_secret = base64.b64decode(response['SecretBinary'])
+        return json.loads(decoded_binary_secret)
 
-    # Extract the required fields from the secret
-    db_host = secret_dict['host']
-    db_port = secret_dict['port']
-    db_name = secret_dict['dbname']
-    db_user = secret_dict['username']
-    db_password = secret_dict['password']
+def get_rds_connection(secret_name, region_name):
+    """
+    Establishes a connection to an AWS RDS database using credentials from Secrets Manager.
+    :param secret_name: The name of the secret in Secrets Manager.
+    :param region_name: The AWS region where the secret is stored.
+    :return: A tuple containing the connection and cursor objects.
+    """
+    # Fetch the database configuration from Secrets Manager
+    db_config = get_secret(secret_name, region_name)
     
-    # Create a connection and cursor
+    if not db_config:
+        raise ValueError("Failed to retrieve database configuration from Secrets Manager")
+
+    # Extract the database connection details
+    dbname = db_config['dbname']
+    user = db_config['username']
+    password = db_config['password']
+    host = db_config['host']
+    port = db_config['port']
+
+    # Establish the database connection
     try:
         connection = psycopg2.connect(
-            host=db_host,
-            port=db_port,
-            dbname=db_name,
-            user=db_user,
-            password=db_password
+            dbname=dbname,
+            user=user,
+            password=password,
+            host=host,
+            port=port
         )
         cursor = connection.cursor()
         return connection, cursor
@@ -41,16 +68,14 @@ def get_db_connection(secret_name, region_name):
         return None, None
 
 # Example usage
-secret_name = "my_db_secret"
+secret_name = "my-rds-secret"
 region_name = "us-west-2"
-connection, cursor = get_db_connection(secret_name, region_name)
+connection, cursor = get_rds_connection(secret_name, region_name)
 
 if connection and cursor:
-    print("Successfully connected to the database.")
-    # Perform database operations
-    
+    print("Successfully connected to the database")
     # Don't forget to close the connection and cursor when done
     cursor.close()
     connection.close()
 else:
-    print("Failed to connect to the database.")
+    print("Failed to connect to the database")
