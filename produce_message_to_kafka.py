@@ -26,11 +26,11 @@ def get_aws_session(config_file, profile='default'):
     )
     return session
 
-def get_secret(session, secret_name, region_name):
+def get_secret(session, secret_name):
     """
     Fetches a secret from AWS Secrets Manager and returns it as a JSON object.
     """
-    client = session.client(service_name='secretsmanager', region_name=region_name)
+    client = session.client(service_name='secretsmanager')
 
     try:
         response = client.get_secret_value(SecretId=secret_name)
@@ -72,13 +72,12 @@ def produce_message_to_kafka(topic, message, kafka_brokers, ssl_config):
 config_file = 'aws_config.ini'
 profile = 'default'
 secret_name = "my-ssl-certificates-secret"
-region_name = "us-west-2"
 
 # Get AWS session
 session = get_aws_session(config_file, profile)
 
 # Fetch SSL certificates from AWS Secrets Manager
-ssl_certificates = get_secret(session, secret_name, region_name)
+ssl_certificates = get_secret(session, secret_name)
 
 if ssl_certificates:
     kafka_brokers = 'your_kafka_broker:9093'
