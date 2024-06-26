@@ -14,11 +14,8 @@ def convert_none_to_string(data):
 json_list = [
     {"name": "Alice", "age": None, "city": "New York"},
     {"name": "Bob", "age": 30, "city": None},
-    None,
-    "string",
-    123,
-    [None, {"key": None}]
+     {"name": "Carl", "age": 20, "city": "New Delhi"}
 ]
 
 converted_list = convert_none_to_string(json_list)
-print(json.dumps(converted_list, indent=2))
+print(converted_list)
