@@ -14,6 +14,10 @@ def validate_request(request_params, schema):
         # Check if the required parameter is present
         if param not in request_params:
             return {"status": "failure", "error": f"Missing required parameter: {param}"}
+        
+        # Check if the required parameter value is empty
+        if request_params[param] == "":
+            return {"status": "failure", "error": f"Required parameter '{param}' cannot be empty"}
     
     for param, rules in properties.items():
         if param in request_params:
@@ -23,15 +27,16 @@ def validate_request(request_params, schema):
             if rules["type"] == "string" and not isinstance(value, str):
                 return {"status": "failure", "error": f"Parameter '{param}' must be a string"}
             
-            # Check for allowed special characters
-            if not validate_param_value(value, rules["allowed_special_chars"]):
-                return {"status": "failure", "error": f"Parameter '{param}' contains invalid characters"}
+            # Check for allowed special characters only if defined
+            if "allowed_special_chars" in rules:
+                if not validate_param_value(value, rules["allowed_special_chars"]):
+                    return {"status": "failure", "error": f"Parameter '{param}' contains invalid characters"}
     
     return {"status": "success"}
 
 # Example usage:
 request_params = {
-    "param1": "valid_value@123",
+    "param1": 123,
     "param2": "invalid@value#"
 }
 
@@ -39,8 +44,7 @@ schema = {
     "required": ["param1", "param2"],
     "properties": {
         "param1": {
-            "type": "string",
-            "allowed_special_chars": "._-"
+            "type": "string"
         },
         "param2": {
             "type": "string",
