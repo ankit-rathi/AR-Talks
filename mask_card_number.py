@@ -14,8 +14,8 @@ output_file_path = 'output_file.txt'
 with open(input_file_path, 'r') as file:
     text = file.read()
 
-# Masking the 16-digit numbers
-masked_text = re.sub(r'\b\d{16}\b', mask_number, text)
+# Updated regular expression to match a 16-digit number that is not preceded or followed by a digit
+masked_text = re.sub(r'(?<!\d)\d{16}(?!\d)', mask_number, text)
 
 # Writing the masked content to the output file
 with open(output_file_path, 'w') as file:
