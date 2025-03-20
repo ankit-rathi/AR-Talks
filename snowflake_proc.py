@@ -19,3 +19,26 @@ BEGIN
     RETURN 'Backup and cleanup completed for ' || TBL_NAME;
 END;
 $$;
+
+
+
+CREATE OR REPLACE PROCEDURE SP_BACKUP_ALL_TABLES()
+RETURNS STRING
+LANGUAGE SQL
+AS 
+$$
+DECLARE TABLE_LIST ARRAY;
+DECLARE TBL_NAME STRING;
+
+BEGIN
+    -- Define the array of table names
+    LET TABLE_LIST = ARRAY_CONSTRUCT('T1', 'T2', 'T3');
+
+    -- Loop through each table in the array
+    FOR TBL_NAME IN (SELECT VALUE FROM TABLE(FLATTEN(INPUT => TABLE_LIST))) DO
+        CALL SP_BACKUP_TABLE(TBL_NAME);
+    END FOR;
+
+    RETURN 'Backup and cleanup completed for all tables';
+END;
+$$;
