@@ -1,44 +1,59 @@
-CREATE OR REPLACE PROCEDURE SP_BACKUP_TABLE(TBL_NAME STRING)
+CREATE OR REPLACE TABLE T1 AS 
+SELECT *, CURRENT_DATE AS load_date 
+FROM (
+    SELECT *, ROW_NUMBER() OVER () AS rn FROM CUSTOMER
+) 
+WHERE rn <= 10;
+
+CREATE OR REPLACE TABLE T2 AS 
+SELECT *, CURRENT_DATE AS load_date 
+FROM (
+    SELECT *, ROW_NUMBER() OVER () AS rn FROM CUSTOMER
+) 
+WHERE rn > (SELECT COUNT(*) - 10 FROM CUSTOMER);
+
+CREATE OR REPLACE TABLE T1_HIST LIKE T1;
+CREATE OR REPLACE TABLE T2_HIST LIKE T2;
+
+CREATE OR REPLACE PROCEDURE manage_history(table_name STRING)
 RETURNS STRING
-LANGUAGE SQL
+LANGUAGE SQL 
 AS 
 $$
-DECLARE HIST_TBL_NAME STRING;
+DECLARE hist_table STRING;
 BEGIN
     -- Determine history table name
-    LET HIST_TBL_NAME = TBL_NAME || '_HST';
+    LET hist_table = table_name || '_HIST';
 
-    -- Insert today's data into the history table
-    EXECUTE IMMEDIATE 
-    'INSERT INTO ' || HIST_TBL_NAME || ' SELECT *, CURRENT_DATE AS LOAD_DATE FROM ' || TBL_NAME;
+    -- Insert today's records from input table into its history table
+    LET sql_insert = 'INSERT INTO ' || hist_table || ' SELECT * FROM ' || table_name || ' WHERE load_date = CURRENT_DATE;';
+    EXECUTE IMMEDIATE sql_insert;
 
     -- Delete records older than 7 days from the history table
-    EXECUTE IMMEDIATE 
-    'DELETE FROM ' || HIST_TBL_NAME || ' WHERE LOAD_DATE < DATEADD(DAY, -7, CURRENT_DATE)';
+    LET sql_delete = 'DELETE FROM ' || hist_table || ' WHERE load_date < CURRENT_DATE - 7;';
+    EXECUTE IMMEDIATE sql_delete;
 
-    RETURN 'Backup and cleanup completed for ' || TBL_NAME;
+    RETURN 'History managed for table: ' || table_name;
 END;
 $$;
 
-
-
-CREATE OR REPLACE PROCEDURE SP_BACKUP_ALL_TABLES()
+CREATE OR REPLACE PROCEDURE manage_all_history()
 RETURNS STRING
-LANGUAGE SQL
+LANGUAGE SQL 
 AS 
 $$
-DECLARE TABLE_LIST ARRAY;
-DECLARE TBL_NAME STRING;
-
+DECLARE tables ARRAY;
 BEGIN
-    -- Define the array of table names
-    LET TABLE_LIST = ARRAY_CONSTRUCT('T1', 'T2', 'T3');
+    -- Define table names
+    LET tables = ARRAY_CONSTRUCT('T1', 'T2');
 
-    -- Loop through each table in the array
-    FOR TBL_NAME IN (SELECT VALUE FROM TABLE(FLATTEN(INPUT => TABLE_LIST))) DO
-        CALL SP_BACKUP_TABLE(TBL_NAME);
+    -- Loop through tables and call manage_history
+    FOR i IN ARRAY_SIZE(tables) DO
+        CALL manage_history(tables[i]);
     END FOR;
 
-    RETURN 'Backup and cleanup completed for all tables';
+    RETURN 'History managed for all tables.';
 END;
 $$;
+
+CALL manage_all_history();
