@@ -56,4 +56,20 @@ BEGIN
 END;
 $$;
 
+CREATE OR REPLACE PROCEDURE manage_all_history()
+RETURNS STRING
+LANGUAGE JAVASCRIPT
+AS
+$$
+    var tables = ['T1', 'T2'];
+    for (var i = 0; i < tables.length; i++) {
+        var sql_cmd = "CALL manage_history('" + tables[i] + "')";
+        snowflake.execute({sqlText: sql_cmd});
+    }
+    return 'History managed for all tables.';
+$$;
+
+
+CALL manage_all_history();
+
 CALL manage_all_history();
