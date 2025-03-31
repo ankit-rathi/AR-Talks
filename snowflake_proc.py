@@ -21,21 +21,35 @@ LANGUAGE SQL
 AS 
 $$
 DECLARE hist_table STRING;
+DECLARE max_load_actual DATE;
+DECLARE max_load_hist DATE;
 BEGIN
     -- Determine history table name
     LET hist_table = table_name || '_HIST';
-
-    -- Insert today's records from input table into its history table
-    LET sql_insert = 'INSERT INTO ' || hist_table || ' SELECT * FROM ' || table_name || ' WHERE load_date = CURRENT_DATE;';
-    EXECUTE IMMEDIATE sql_insert;
-
+    
+    -- Get max load_date from actual table
+    LET sql_max_actual = 'SELECT MAX(load_date) FROM ' || table_name || ';';
+    LET max_load_actual = (EXECUTE IMMEDIATE sql_max_actual);
+    
+    -- Get max load_date from history table
+    LET sql_max_hist = 'SELECT MAX(load_date) FROM ' || hist_table || ';';
+    LET max_load_hist = (EXECUTE IMMEDIATE sql_max_hist);
+    
+    -- Check if max load_date of actual table is higher than history table
+    IF max_load_actual > COALESCE(max_load_hist, '1900-01-01') THEN
+        -- Insert today's records into history table
+        LET sql_insert = 'INSERT INTO ' || hist_table || ' SELECT * FROM ' || table_name || ' WHERE load_date = CURRENT_DATE;';
+        EXECUTE IMMEDIATE sql_insert;
+    END IF;
+    
     -- Delete records older than 7 days from the history table
     LET sql_delete = 'DELETE FROM ' || hist_table || ' WHERE load_date < CURRENT_DATE - 7;';
     EXECUTE IMMEDIATE sql_delete;
-
+    
     RETURN 'History managed for table: ' || table_name;
 END;
 $$;
+
 
 CREATE OR REPLACE PROCEDURE manage_all_history()
 RETURNS STRING
