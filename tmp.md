@@ -1,74 +1,74 @@
 
-# Dashboard Effort Estimation & Setup Plan
+# Dashboard Effort Estimation & Plan - Presentation Transcript
 
-A structured plan to estimate and execute the development of Tableau dashboards using Snowflake as the data warehouse across three business areas, with supporting platform setup and project infrastructure.
+## Opening
 
-## Project Scope
+Good [morning/afternoon], everyone. Thank you for taking the time to join this session.
 
-- Business Areas: 3
-- Dashboards per Area: 4–5
-- Total Dashboards: ~15
-- Core Team:
-  - 1 Snowflake Admin/Data Engineer
-  - 1 Tableau Developer
+Today, I’d like to walk you through our proposed plan and effort estimation for building business dashboards on Tableau, powered by Snowflake as our data warehouse.
 
-## Objectives
+This project spans three business areas, each with distinct data sources and dashboard needs. Our goal is to deliver a set of reliable, insightful dashboards that support data-driven decision-making across the organization.
 
-1. Identify key data sources per business area.
-2. Ensure all raw data is available in Snowflake.
-3. Build data models and pipelines (if needed).
-4. Set up necessary infrastructure (Snowflake, Airflow, Tableau, JIRA).
-5. Develop and deploy Tableau dashboards.
-6. Support user onboarding and testing.
+## Project Scope and Objectives
 
-## Platform & Infra Setup Effort
+We’re looking at roughly 4 to 5 dashboards per business area, which totals around 15 dashboards.
 
-| Setup Component            | Task Description                             | Owner               | Effort (Days) | Notes                        |
-|---------------------------|----------------------------------------------|----------------------|---------------|------------------------------|
-| Snowflake Admin Setup     | Roles, warehouses, RBAC setup, quota policies| Snowflake Engineer   | 2 days        | Initial platform prep        |
-| Airflow Integration       | Airflow deployment, Snowflake connector setup| Snowflake Engineer   | 2–3 days      | Optional if pipeline needed  |
-| Tableau Setup             | License provisioning, site/project setup     | Tableau Developer    | 1 day         | Includes access control      |
-| JIRA Setup                | Project board, workflows, task templates     | Project Manager/Lead | 1 day         | Optional but useful          |
-| User Onboarding           | Training on access, JIRA, Tableau usage      | Combined Effort      | 1 day         | Admin + basic training       |
+The core objectives of this project are:
 
-## Development Effort (Person-Days)
+1. Identifying and validating the right data sources.
+2. Ensuring all required raw data is modeled and made available in Snowflake.
+3. Building interactive, user-friendly Tableau dashboards.
+4. Managing the project using industry-standard tools and governance frameworks.
 
-| Phase                      | Task                                      | Snowflake Engineer | Tableau Developer | Notes                      |
-|----------------------------|-------------------------------------------|---------------------|--------------------|----------------------------|
-| Discovery & Planning       | Dashboard scoping + requirement gathering | 3 days              | 3 days             | 1 day per business area    |
-| Data Readiness             | Source identification & gap analysis      | 3 days              | -                  | Review schema + fields     |
-|                            | Ingestion/modeling (if needed)            | 6–9 days            | -                  | 2–3 days per data source   |
-|                            | Data validation                           | 3 days              | -                  | Parallel with dev          |
-| Dashboard Development      | Tableau development & design              | -                   | 15–20 days         | 1–1.5 days per dashboard   |
-| UAT & Iteration            | Review + feedback loop                    | 2 days              | 2 days             | Combined effort            |
-| Deployment & Docs          | Publish dashboards, documentation         | 1 day               | 1 day              | Include walkthroughs       |
-| Buffer                     | Unknowns & rework                         | 3 days              | 3 days             | Always buffer              |
+## Key Resources
 
-## Total Estimated Effort
+We’ll be working with two dedicated resources:
 
-| Role               | Effort (Person-Days) |
-|--------------------|----------------------|
-| Snowflake Engineer | ~24–28 days          |
-| Tableau Developer  | ~24–29 days          |
-| PM/User Onboarding | ~2–3 days            |
+- One focused on Snowflake and data engineering.
+- One focused on Tableau dashboard development.
 
-Estimated Timeline (Parallel Workstreams): ~5–6 weeks
+In addition, there are a few enabling tasks such as Snowflake administration, Airflow orchestration, and user onboarding that are essential to kickstart the delivery efficiently.
 
-## Suggested Weekly Workflow
+## Effort Estimation
 
-| Week | Snowflake Engineer                  | Tableau Developer         | PM/Support             |
-|------|-------------------------------------|----------------------------|------------------------|
-| 1    | Snowflake & Airflow setup, data mapping| Requirement gathering  | JIRA + onboarding      |
-| 2    | Ingestion & modeling (Area 1)       | Dashboards (Area 1)       |                        |
-| 3    | Modeling (Areas 2 & 3), validation  | Dashboards (Areas 2 & 3)  |                        |
-| 4    | Data fixes, support, deploy         | Final dashboards + review |                        |
-| 5    | UAT, bugfixes, documentation        | UAT, polish, documentation|                        |
-| 6    | Buffer + support                    | Buffer + support          |                        |
+Let me now break down the effort in person-days across each major phase.
 
-## Final Recommendations
+| Phase | Task | Snowflake Engineer | Tableau Developer | Additional Roles |
+| --- | --- | --- | --- | --- |
+| Discovery & Planning | Requirement gathering & dashboard scoping | 3 | 3 | - |
+| Data Platform Setup | Snowflake admin & DWH setup | 3 | - | - |
+| Orchestration Setup | Airflow setup & Snowflake integration | 3 | - | - |
+| DevOps & Tooling | Tableau licenses & configuration | - | 2 | - |
+| Project Management | JIRA board setup | 1 | 1 | - |
+| User Enablement | Onboarding & access | 1 | 1 | - |
+| Data Discovery | Source analysis & gap ID | 3 | - | - |
+| Data Engineering | Ingestion/modeling | 6–9 | - | - |
+| Data QA | Data validation | 3 | - | - |
+| Dashboard Dev | Tableau design & build | - | 15–20 | - |
+| UAT & Review | Feedback & iterations | 2 | 2 | - |
+| Deployment | Final deploy & docs | 1 | 1 | - |
+| Buffer | For rework or unknowns | 3 | 3 | - |
 
-- Sequence business areas by data readiness.
-- Document field mappings, transformations, and dashboard logic from day one.
-- Use agile sprints to demo dashboards early and often.
-- Set up a dashboard tracker and task status board (JIRA).
-- Include user onboarding and access setup early to avoid go-live delays.
+Total effort comes to approximately **25–28 days** for the Snowflake resource, and **27–32 days** for the Tableau resource.
+
+## Delivery Timeline
+
+With parallel execution, we’re looking at a timeline of about **5 weeks**, structured as follows:
+
+| Week | Snowflake Person | Tableau Person |
+|------|------------------|----------------|
+| 1    | Platform setup + Area 1 modeling | Requirement gathering |
+| 2    | Area 2 & 3 data prep | Area 1 dashboards |
+| 3    | Validation & fixes | Continue dashboards |
+| 4    | Support & deploy | Finish dashboards + review |
+| 5    | UAT, onboarding, buffer | UAT, onboarding, buffer |
+
+## Key Recommendations
+
+I recommend we approach the delivery in agile waves—starting with business areas that already have structured data available. This lets us show progress early and adapt to feedback.
+
+Additionally, setting up a dashboard tracker and establishing periodic validation checkpoints will help maintain data quality and development pace.
+
+## Closing
+
+That wraps up the plan. I’m happy to answer any questions or dive deeper into any of the phases or assumptions made in the estimation.
