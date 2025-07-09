@@ -1,16 +1,60 @@
-Project Background & Scope: Business Requirements
-As part of compliance with the Digital Operational Resilience Act (DORA) introduced by the European Union, the Bank is required to maintain and annually submit a comprehensive register of contractual arrangements with ICT third-party service providers. This register must be available at the entity, sub-consolidated, and consolidated levels and submitted to the European Central Bank (ECB).
+This section outlines the key non-functional requirements for the DORA reporting automation solution to ensure it meets operational expectations and aligns with the bank's standards.
 
-Currently, the process of preparing this register is entirely manual, involving the collection, consolidation, and validation of data across disparate systems and teams. This manual approach is time-consuming, prone to errors, and lacks traceability, making it inefficient and potentially non-compliant under DORA’s operational resilience requirements.
+1. Performance & Timeliness
+The monthly ingestion, validation, and report generation process must complete overnight within a few hours, ensuring availability of outputs by the next business day.
 
-To address this, the proposed solution aims to automate the report generation process by integrating with internal systems such as Operations Assets and Internal Service Management (ISM) platforms. The solution will enable:
+The system should be optimized for batch processing of large data volumes.
 
-Ingestion of data from multiple sources
+2. Availability
+The system is expected to run in batch mode once a month, post business hours.
 
-Automated validation against defined rules and quality checks
+High availability is not a primary requirement; however, the solution should be reliable enough to ensure monthly processing without failure.
 
-Generation of standardized reports in the ECB-required format via API-based file output
+3. Security & Compliance
+The system must comply with the bank's internal IT security policies, including:
 
-Support for monthly internal runs to ensure accuracy, traceability, and internal governance ahead of the formal annual submission
+Role-based access control (read-only consumer access)
 
-The project scope focuses on delivering a resilient, auditable, and scalable reporting solution that ensures compliance with DORA's third-party risk reporting mandates while improving operational efficiency and reducing manual dependency.
+Secure APIs for data ingestion and report export
+
+Encryption at rest and in transit as per standard policies
+
+No additional DORA-specific security constraints are currently mandated.
+
+4. Auditability & Logging
+Standard application logging must be implemented to capture key events related to:
+
+Data ingestion success/failure
+
+Validation checks and errors
+
+File generation for reporting
+
+Logs should be retained as per the bank’s retention policy and be accessible for internal audit and troubleshooting.
+
+5. User Access & Roles
+The system will support read-only consumer access to generated reports.
+
+No complex role hierarchy is required; RBAC will be limited to data consumers.
+
+Authentication and authorization will follow existing bank standards.
+
+6. Scalability & Extensibility
+The solution should be designed with extensibility in mind to allow future:
+
+Inclusion of additional reporting use cases under DORA
+
+Onboarding of new data sources and systems
+
+Design should support modular enhancement with minimal rework.
+
+7. Technical Stack & Integration
+There are no strict technology constraints; the solution may leverage any tech stack suitable for meeting business and operational needs.
+
+It must be capable of integrating with existing systems such as:
+
+Operations Assets database
+
+Internal Service Management (ISM) tools
+
+APIs for report generation must be compatible with downstream reporting platforms.
