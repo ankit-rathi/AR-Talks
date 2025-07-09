@@ -1,33 +1,16 @@
-# RAID Log – Dashboard Effort & Setup Plan
+Project Background & Scope: Business Requirements
+As part of compliance with the Digital Operational Resilience Act (DORA) introduced by the European Union, the Bank is required to maintain and annually submit a comprehensive register of contractual arrangements with ICT third-party service providers. This register must be available at the entity, sub-consolidated, and consolidated levels and submitted to the European Central Bank (ECB).
 
-## Risks
-| Risk | Description | Mitigation |
-|------|-------------|------------|
-| **Data unavailability** | Required raw data may not exist or be incomplete in source systems. | Early data discovery phase, escalate missing data to business owners. |
-| **Underestimation of dashboard complexity** | Some dashboards may require more time due to complex logic or visuals. | Add buffer in timeline; prioritize MVP features first. |
-| **Integration delays** | Snowflake + Airflow or Tableau setup might take longer than planned. | Start infra setup in parallel with planning; engage platform teams early. |
-| **Limited resource availability** | Only 1 person each for Snowflake and Tableau may become a bottleneck. | Prioritize business areas; avoid parallel work on too many dashboards. |
-| **Stakeholder feedback loop** | Late feedback or unclear requirements can delay progress. | Schedule interim demos, agree on acceptance criteria early. |
+Currently, the process of preparing this register is entirely manual, involving the collection, consolidation, and validation of data across disparate systems and teams. This manual approach is time-consuming, prone to errors, and lacks traceability, making it inefficient and potentially non-compliant under DORA’s operational resilience requirements.
 
-## Assumptions
-| Assumption | Rationale |
-|------------|-----------|
-| Business stakeholders are available for requirement gathering and UAT. | Critical to shape dashboards correctly and validate. |
-| Data access to all relevant sources will be granted timely. | Without this, development will be blocked. |
-| Snowflake and Tableau infrastructure will be fully operational before dashboard development begins. | Prevents rework and avoids idle time for developers. |
-| No major changes in business requirements once development starts. | Changing requirements could throw off the timeline. |
-| Each dashboard can be built within 1–1.5 days on average. | Used for effort estimation; assumes moderate complexity. |
+To address this, the proposed solution aims to automate the report generation process by integrating with internal systems such as Operations Assets and Internal Service Management (ISM) platforms. The solution will enable:
 
-## Issues
-| Issue | Impact | Resolution |
-|-------|--------|------------|
-| Tableau license provisioning may be delayed. | Tableau resource can't start building dashboards. | Coordinate with IT/license admin early to avoid delay. |
-| Source system documentation may be outdated or missing. | Slows down data mapping and understanding. | Work closely with SMEs or data owners for clarity. |
+Ingestion of data from multiple sources
 
-## Dependencies
-| Dependency | Description | Impact |
-|------------|-------------|--------|
-| **Business SME availability** | Needed during requirements, validation, and feedback. | Delays in their availability slow down entire project. |
-| **IT/Infra team** | For provisioning Snowflake roles, Airflow pipelines, Tableau server access. | Any delays here affect dev start time. |
-| **Access control setup** | Permissions for Snowflake, Tableau, and source systems. | Critical for both developers to start their work. |
-| **JIRA board setup** | For tracking tasks and progress collaboratively. | Without it, project transparency and accountability suffer. |
+Automated validation against defined rules and quality checks
+
+Generation of standardized reports in the ECB-required format via API-based file output
+
+Support for monthly internal runs to ensure accuracy, traceability, and internal governance ahead of the formal annual submission
+
+The project scope focuses on delivering a resilient, auditable, and scalable reporting solution that ensures compliance with DORA's third-party risk reporting mandates while improving operational efficiency and reducing manual dependency.
