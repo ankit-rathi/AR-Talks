@@ -1,174 +1,94 @@
-# kafka_config.yaml
-kafka:
-  bootstrap_servers: "localhost:9092"
-  group_id: "demo-group"
-  topics:
-    - "demo-topic"
-  auto_offset_reset: "earliest"      # "latest" or "earliest"
-  enable_auto_commit: true           # or false
-  # --- OPTIONAL AUTH (uncomment if needed) ---
-  # security_protocol: "SASL_SSL"
-  # sasl_mechanism: "PLAIN"          # for Confluent Cloud: "PLAIN"
-  # sasl_plain_username: "<api_key>"
-  # sasl_plain_password: "<api_secret>"
-  # session_timeout_ms: 45000
-
-###########BEFORE#################
-
-# consumer_kafka_python.py
 import json
+import base64
+import time
+from datetime import datetime
 import signal
-import sys
-import yaml
-from kafka import KafkaConsumer
-
-stop = False
-
-def handle_sigint(signum, frame):
-    global stop
-    stop = True
-
-signal.signal(signal.SIGINT, handle_sigint)
-signal.signal(signal.SIGTERM, handle_sigint)
-
-def main():
-    with open("kafka_config.yaml") as f:
-        cfg = yaml.safe_load(f)["kafka"]
-
-    # kafka-python uses underscore-style keys and direct kwargs
-    consumer = KafkaConsumer(
-        *cfg.get("topics", []),
-        bootstrap_servers=cfg["bootstrap_servers"],
-        group_id=cfg.get("group_id"),
-        auto_offset_reset=cfg.get("auto_offset_reset", "latest"),
-        enable_auto_commit=cfg.get("enable_auto_commit", True),
-        # Deserialization—you can replace with your own logic
-        value_deserializer=lambda v: json.loads(v.decode("utf-8")),
-        # Optional security (kafka-python naming)
-        security_protocol=cfg.get("security_protocol"),
-        sasl_mechanism=cfg.get("sasl_mechanism"),
-        sasl_plain_username=cfg.get("sasl_plain_username"),
-        sasl_plain_password=cfg.get("sasl_plain_password"),
-        session_timeout_ms=cfg.get("session_timeout_ms"),
-    )
-
-    try:
-        while not stop:
-            try:
-                for msg in consumer:
-                    if stop:
-                        break
-                    # msg.value is already deserialized by value_deserializer
-                    process_message(msg.topic, msg.partition, msg.offset, msg.key, msg.value)
-            except Exception as e:
-                # Handle message loop errors (transient network, deserialization, etc.)
-                handle_error(e)
-    finally:
-        consumer.close()
-
-def process_message(topic, partition, offset, key, value):
-    # Your domain logic here
-    print(f"[kafka-python] {topic}:{partition}@{offset} key={key} value={value}")
-
-def handle_error(e):
-    # Your error logging/alerting
-    print(f"[kafka-python] Error: {e}", file=sys.stderr)
-
-if __name__ == "__main__":
-    main()
+from confluent_kafka import Consumer, KafkaException, KafkaError
 
 
-########AFTER##############
+def test_read_kafka(kafka_creds_dict, kafka_topic_config_dict, kafka_consumer_config_dict, execution_details_dict, kwargs):
+    retry = kafka_consumer_config_dict.get('retries', 5)
 
-# consumer_confluent_kafka.py
-import json
-import signal
-import sys
-import yaml
-from confluent_kafka import Consumer, KafkaError, KafkaException
+    while retry > 0:
+        try:
+            # === 1. Fetch secrets from secret manager ===
+            secrets = get_secrets_from_secret_manager(
+                kafka_creds_dict['secret_name'],
+                kafka_creds_dict['region']
+            )
 
-stop = False
+            ssl_cafile_path = "/var/tmp/kafka_ssl_cafile.pem"
+            ssl_certfile_path = "/var/tmp/kafka_ssl_certfile.pem"
+            ssl_keyfile_path = "/var/tmp/kafka_ssl_keyfile.key"
 
-def handle_sigint(signum, frame):
-    global stop
-    stop = True
+            # Write SSL files
+            with open(ssl_cafile_path, "w", encoding='utf-8') as ca_file:
+                ca_file.write(base64.b64decode(secrets[kafka_creds_dict["secrets_ssl_cafile"]]).decode('utf-8'))
+            with open(ssl_certfile_path, "w", encoding='utf-8') as cert_file:
+                cert_file.write(base64.b64decode(secrets[kafka_creds_dict["secrets_ssl_certfile"]]).decode('utf-8'))
+            with open(ssl_keyfile_path, "w", encoding='utf-8') as key_file:
+                key_file.write(base64.b64decode(secrets[kafka_creds_dict["secrets_ssl_keyfile"]]).decode('utf-8'))
 
-signal.signal(signal.SIGINT, handle_sigint)
-signal.signal(signal.SIGTERM, handle_sigint)
+            # === 2. Confluent Kafka Consumer Config ===
+            consumer_conf = {
+                "bootstrap.servers": secrets[kafka_creds_dict['secrets_kafka_wt_brokers']],
+                "group.id": kafka_topic_config_dict['consumer_group'],
+                "auto.offset.reset": kafka_consumer_config_dict['auto_offset_reset'],
+                "enable.auto.commit": kafka_consumer_config_dict['enable_auto_commit'],
+                "security.protocol": kafka_consumer_config_dict['security_protocol'],
+                "ssl.ca.location": ssl_cafile_path,
+                "ssl.certificate.location": ssl_certfile_path,
+                "ssl.key.location": ssl_keyfile_path,
+                "ssl.key.password": secrets[kafka_creds_dict['secrets_ssl_pwd']],
+                "max.poll.interval.ms": kafka_consumer_config_dict['max_poll_interval_ms'],
+                "request.timeout.ms": kafka_consumer_config_dict['request_timeout_ms'],
+                "connections.max.idle.ms": kafka_consumer_config_dict['connections_max_idle_ms'],
+                # consumer_timeout_ms in kafka-python is not direct; emulate via poll timeout
+            }
 
-def map_kafka_python_to_confluent(cfg):
-    """
-    Keep your YAML unchanged and map to confluent-kafka config keys.
-    """
-    m = {
-        "bootstrap.servers": cfg["bootstrap_servers"],
-        "group.id": cfg.get("group_id"),
-        "auto.offset.reset": cfg.get("auto_offset_reset", "latest"),
-        "enable.auto.commit": cfg.get("enable_auto_commit", True),
-    }
-    # Optional auth/security mapping
-    if cfg.get("security_protocol"):
-        m["security.protocol"] = cfg["security_protocol"]
-    if cfg.get("sasl_mechanism"):
-        # confluent uses plural "sasl.mechanisms"
-        m["sasl.mechanisms"] = cfg["sasl_mechanism"]
-    if cfg.get("sasl_plain_username"):
-        m["sasl.username"] = cfg["sasl_plain_username"]
-    if cfg.get("sasl_plain_password"):
-        m["sasl.password"] = cfg["sasl_plain_password"]
-    if cfg.get("session_timeout_ms"):
-        m["session.timeout.ms"] = cfg["session_timeout_ms"]
-    return {k: v for k, v in m.items() if v is not None}
+            consumer = Consumer(consumer_conf)
+            consumer.subscribe([kafka_topic_config_dict['topic_name']])
 
-def main():
-    with open("kafka_config.yaml") as f:
-        raw = yaml.safe_load(f)["kafka"]
-
-    consumer_conf = map_kafka_python_to_confluent(raw)
-    topics = raw.get("topics", [])
-
-    consumer = Consumer(consumer_conf)
-
-    # Subscribe instead of passing topics to constructor
-    consumer.subscribe(topics)
-
-    try:
-        while not stop:
-            try:
-                msg = consumer.poll(1.0)   # seconds
+            # === 3. Poll messages ===
+            while True:
+                msg = consumer.poll(timeout=1.0)  # poll with 1 second timeout
                 if msg is None:
                     continue
-
                 if msg.error():
-                    # Some errors are informational (e.g., partition EOF),
-                    # but treat non-EOF as exceptions or log accordingly.
                     if msg.error().code() == KafkaError._PARTITION_EOF:
-                        # End of partition event – often safe to ignore
+                        # End of partition event, safe to ignore
                         continue
                     raise KafkaException(msg.error())
 
-                # Manual deserialization (mirror your kafka-python value_deserializer)
-                value = json.loads(msg.value().decode("utf-8")) if msg.value() is not None else None
-                key = msg.key().decode("utf-8") if msg.key() else None
+                # === 4. Decode message ===
+                message_data = json.loads(msg.value().decode('utf-8'))
 
-                process_message(msg.topic(), msg.partition(), msg.offset(), key, value)
+                # === 5. Check condition ===
+                if safe_evaluate_condition(execution_details_dict['pt_message_check_condition'], message_data):
+                    xcom_key = datetime.now().strftime("%Y%m%d%H%M%S")
+                    message_to_emr_dict = {
+                        "request_uid": header['request_uid'],
+                        "airflow_status": 'PASS',
+                        "source": "read_kafka_message",
+                        "message": message_data
+                    }
+                    kwargs['ti'].xcom_push(key=xcom_key, value=message_to_emr_dict)
 
-                # If you disabled auto commit, you can commit manually:
-                # consumer.commit(msg, asynchronous=True)
+                    # Manual commit example if needed
+                    # consumer.commit(asynchronous=True)
 
-            except KafkaException as ke:
-                handle_error(ke)
-            except Exception as e:
-                handle_error(e)
-    finally:
-        # Ensure a clean leave of the group and final commit if auto-commit is enabled
-        consumer.close()
+                    return xcom_key
 
-def process_message(topic, partition, offset, key, value):
-    print(f"[confluent-kafka] {topic}:{partition}@{offset} key={key} value={value}")
-
-def handle_error(e):
-    print(f"[confluent-kafka] Error: {e}", file=sys.stderr)
-
-if __name__ == "__main__":
-    main()
+        except (KafkaException, KafkaError, FileNotFoundError, ValueError) as kafka_connection_exception:
+            retry -= 1
+            if retry > 0:
+                logger.info("Retrying in %s seconds…", kafka_consumer_config_dict.get('retry_delay', 60))
+                time.sleep(kafka_consumer_config_dict.get('retry_delay', 60))
+                continue
+            logger.error("Kafka connection exception due to %s", kafka_connection_exception)
+            raise kafka_connection_exception
+        finally:
+            try:
+                consumer.close()
+            except Exception:
+                pass
