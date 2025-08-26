@@ -92,3 +92,77 @@ def test_read_kafka(kafka_creds_dict, kafka_topic_config_dict, kafka_consumer_co
                 consumer.close()
             except Exception:
                 pass
+
+
+from confluent_kafka import Consumer, KafkaException, KafkaError
+import logging
+import json
+
+def kafka_listener(config_dict, **kwargs):
+    kafka_creds_dict = config_dict['kafka']['kafka_credential_details']
+    kafka_consumer_config_dict = config_dict['kafka']['kafka_consumer_config']
+    kafka_topic_config_dict = config_dict['kafka']['external_topic']
+
+    # Build Consumer configuration (Confluent style)
+    consumer_conf = {
+        'bootstrap.servers': kafka_creds_dict['bootstrap_servers'],
+        'security.protocol': kafka_consumer_config_dict['security_protocol'],
+        'ssl.ca.location': kafka_consumer_config_dict.get('ssl_cafile'),
+        'ssl.certificate.location': kafka_consumer_config_dict.get('ssl_certfile'),
+        'ssl.key.location': kafka_consumer_config_dict.get('ssl_keyfile'),
+        'ssl.key.password': kafka_consumer_config_dict.get('ssl_password'),
+        'group.id': kafka_consumer_config_dict['group_id'],
+        'auto.offset.reset': kafka_consumer_config_dict.get('auto_offset_reset', 'earliest'),
+        'enable.auto.commit': False  # Manual commit like kafka-python
+    }
+
+    consumer = Consumer(consumer_conf)
+    topic_name = kafka_topic_config_dict['topic_name']
+    consumer.subscribe([topic_name])
+
+    expected_message_count = 0
+    offset_to_read_from = None
+
+    try:
+        while True:
+            msg = consumer.poll(timeout=5.0)  # Poll messages
+            if msg is None:
+                logging.info("No messages received in this poll cycle.")
+                break
+            if msg.error():
+                if msg.error().code() == KafkaError._PARTITION_EOF:
+                    logging.info(f"End of partition reached {msg.topic()} [{msg.partition()}] at offset {msg.offset()}")
+                    continue
+                else:
+                    raise KafkaException(msg.error())
+
+            try:
+                key = msg.key().decode('utf-8') if msg.key() else None
+                value = msg.value().decode('utf-8')
+                logging.info("Message offset=%s, partition=%s, key=%s, value=%s",
+                             msg.offset(), msg.partition(), key, value)
+                offset_to_read_from = f"{msg.offset()},{msg.partition()}"
+
+                consumer.commit(msg)  # Manual commit
+                expected_message_count += 1
+                break  # exit loop after one message (as per your logic)
+
+            except json.JSONDecodeError:
+                logging.error("Can't decode Kafka message")
+                logging.error("Skipping processing of message at offset %d", msg.offset())
+            except Exception as exc:
+                logging.error("Caught error while processing Kafka message", exc_info=True)
+                raise exc
+
+    except KafkaException as exc:
+        logging.error("Kafka error occurred", exc_info=True)
+        raise exc
+    finally:
+        consumer.close()
+
+    if expected_message_count > 0:
+        kwargs['ti'].xcom_push(key='message_offset', value=offset_to_read_from)
+        return "emr_connection_creator"
+
+    return "skipped"
+
