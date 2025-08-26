@@ -166,3 +166,91 @@ def kafka_listener(config_dict, **kwargs):
 
     return "skipped"
 
+
+from confluent_kafka import Consumer, KafkaError, KafkaException
+import boto3
+import json
+import logging
+
+def confluent_kafka_listener(config_dict, config):
+    try:
+        # Initialize S3 client
+        s3_client = boto3.client('s3')
+
+        # Extract Kafka configs
+        kafka_creds_dict = config_dict['kafka']['kafka_credential_details']
+        kafka_consumer_config_dict = config_dict['kafka']['kafka_consumer_config']
+        kafka_topic_config_dict = config_dict['kafka']['internal_topic']
+
+        # Build Consumer configuration
+        consumer_conf = {
+            'bootstrap.servers': kafka_creds_dict['bootstrap_servers'],
+            'security.protocol': kafka_consumer_config_dict.get('security_protocol', 'SSL'),
+            'ssl.ca.location': kafka_creds_dict.get('ssl_ca_location'),
+            'ssl.certificate.location': kafka_creds_dict.get('ssl_cert_location'),
+            'ssl.key.location': kafka_creds_dict.get('ssl_key_location'),
+            'ssl.key.password': kafka_creds_dict.get('ssl_password'),
+            'group.id': kafka_consumer_config_dict.get('group_id', 'default_group'),
+            'auto.offset.reset': kafka_consumer_config_dict.get('auto_offset_reset', 'earliest'),
+            'enable.auto.commit': False
+        }
+
+        consumer = Consumer(consumer_conf)
+        consumer.subscribe([kafka_topic_config_dict['topic_name']])
+        logging.info("Subscribed to Kafka topic: %s", kafka_topic_config_dict['topic_name'])
+
+        while True:
+            msg = consumer.poll(timeout=1.0)
+            if msg is None:
+                continue  # No message this poll cycle
+            if msg.error():
+                if msg.error().code() == KafkaError._PARTITION_EOF:
+                    logging.info("End of partition reached %s [%d] at offset %d",
+                                 msg.topic(), msg.partition(), msg.offset())
+                    continue
+                else:
+                    raise KafkaException(msg.error())
+
+            # Process message
+            logging.info("Message offset: %s, partition: %s, key: %s, value: %s",
+                         msg.offset(), msg.partition(), msg.key(), msg.value())
+
+            message_value = json.loads(msg.value().decode('utf-8'))
+            json_data = json.dumps(message_value)
+            logging.info('Printing message_value: %s', message_value)
+
+            message_value_validation_list = config['dynamic_dag_pattern_file']['message_value_validation_list']
+            if all(value in message_value for value in message_value_validation_list):
+                message_value_validation_list_values = {
+                    key: message_value[key] for key in message_value_validation_list if key in message_value
+                }
+
+                # File name construction
+                file_name = (config['dag_naming_convention']['dag_name_prefix'] + "_" +
+                             config['dag_naming_convention']['dag_name_suffix']).format(
+                             **message_value_validation_list_values)
+                file_name = ''.join(c for c in file_name if c.isalnum() or c == '_') + '.json'
+
+                # Upload to S3
+                s3_client.put_object(
+                    Bucket=config_dict['airflow']['s3_bucket'],
+                    Key=f"{config_dict['airflow']['script_path']}/"
+                        f"{config_dict['dynamic_dag_pattern_file']['file_path']}/{file_name}",
+                    Body=json_data
+                )
+                logging.info("Uploaded file %s to S3", file_name)
+
+                # Commit this message offset
+                consumer.commit(msg)
+
+    except KafkaException as ke:
+        logging.error("Kafka error occurred", exc_info=True)
+        raise ke
+    except Exception as e:
+        logging.error("Unexpected error occurred", exc_info=True)
+        raise e
+    finally:
+        consumer.close()
+        logging.info("Kafka consumer closed.")
+
+
