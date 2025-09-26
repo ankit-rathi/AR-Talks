@@ -1,9 +1,13 @@
-I have the following Snowflake SQL query. Please review and optimize it according to SQL best practices and Snowflake-specific performance guidelines.
+If you are part of a financial entity or ICT provider subject to DORA, here’s what to check/do re: data quality:
 
-Suggest any improvements related to joins, filters, CTEs, subqueries, or functions used.
+Data inventory & classification — what data do you have, which systems hold it, how sensitive/critical is it.
 
-If possible, improve readability and maintainability.
+Data governance — standards, definitions, who owns data, who is responsible, how it’s documented.
 
-Also mention if clustering keys, result caching, or other Snowflake features could help.
+Logging & audit trails — ensure logs are kept, secure, complete; able to show history of incidents.
 
-Here's the query:
+Backup & recovery mechanisms — test them; ensure they achieve what you expect (availability, integrity, authenticity).
+
+Incident detection & reporting data — ensure data feeding into detection (e.g., monitoring, alerts) is timely and accurate, and that reports to authorities are complete and consistent.
+
+Contractual data with third parties — ensure you collect accurate data about third-party ICT providers: their risks, their services, etc.
