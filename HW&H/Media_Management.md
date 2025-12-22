@@ -1,5 +1,3 @@
-My wife has keen interest in clicking photos and videos, but not in managing the media storage. Not every photo or video is equally good or useful but there is no identification and deletion of garbage yet. She have filled 1 TB hard-disk with photos, her phone of 128 GB is also filled with photos, she keeps asking me for subscription of cloud storage but my view is if 1 TB storage is not enough and she doesn't learn managing her media storage then even cloud storage would prove to be unmanageable and very expensive. I can't manage her media effectively as I can't decide which photo video to keep and which to delete. When we discuss this, we often end up quarrelling, can you suggest how can we resolve this issue as a couple without buying new devices and expensive cloud storage?
-
 # 📸 How to Resolve the Media Storage Conflict (Without Buying More Storage)
 
 Your wife loves capturing moments. You value order and efficiency.  
