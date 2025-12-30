@@ -1,3 +1,5 @@
+## 3. Data Models and Query Languages
+
 The primary takeaway from this chapter is that **data models determine not only how software is written, but how we think about the problems we are solving**. Because no single model is perfect for every use case, developers must navigate trade-offs between different structures, such as relational, document-based, and graph-oriented models.
 
 Key insights from the sources include:
