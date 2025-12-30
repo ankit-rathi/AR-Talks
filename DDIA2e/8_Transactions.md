@@ -1,3 +1,5 @@
+## 8. Transactions
+
 Based on the sources provided, the chapter "Safeguarding Data: The Mechanics of Database Transactions" offers several critical insights into how data systems manage faults and concurrency. Here are the key takeaways:
 
 ### 1. Transactions as a Safety Abstraction
