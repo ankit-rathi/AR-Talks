@@ -1,3 +1,5 @@
+## 1. Trade-offs in Data Systems Architecture
+
 The primary theme of this chapter is that **there are no perfect solutions in data systems architecture, only trade-offs**. To build an effective system, one must navigate various competing requirements, such as performance, cost, and complexity, to find the best possible balance for a specific application.
 
 Key takeaways from the sources include:
