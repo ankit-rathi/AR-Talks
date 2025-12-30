@@ -1,3 +1,5 @@
+## 10. Consistency and Consensus
+
 This chapter, **"Consistency and Consensus,"** focuses on how distributed systems achieve strong guarantees—specifically linearizability—despite the physical unreliability and partial failures discussed in previous chapters.
 
 The key takeaways from the sources are as follows:
