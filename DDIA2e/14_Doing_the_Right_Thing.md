@@ -33,3 +33,9 @@ The sources compare the information age to the Industrial Revolution. Just as ea
 
 **Analogy for Understanding Data Responsibility:**
 Building a data system today is like **building a city's plumbing and waste system** during the early Industrial Revolution. While the goal is to provide a valuable service (clean water/data flow), if you ignore the "pollution" (excessive data collection/bias), you eventually poison the very community you intended to serve. Just as we eventually learned to manage industrial waste for the sake of public health, engineers must now learn to manage data to protect the "environmental health" of human privacy and dignity.
+
+### Chapter Summary
+
+Finally, in this last chapter, we took a step back and examined some ethical aspects of building data-intensive applications. We saw that although data can be used to do good, it can also do significant harm: making decisions that seriously affect people’s lives and are difficult to appeal against, leading to discrimination and exploitation, normalizing surveillance, and exposing intimate information. We also run the risk of data breaches, and we may find that a well-intentioned use of data has unintended consequences.
+
+As software and data are having such a large impact on the world, we as engineers must remember that we carry a responsibility to work toward the kind of world that we want to live in: a world that treats people with humanity and respect. Let’s work together towards that goal.
