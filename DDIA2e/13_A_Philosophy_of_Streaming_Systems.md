@@ -1,3 +1,5 @@
+## 13. A Philosophy of Streaming Systems
+
 Chapter 13 of the sources presents a cohesive philosophy for building reliable, scalable, and maintainable applications by treating data systems as a unified, unbundled dataflow. Below are the key takeaways from this chapter:
 
 ### 1. The Necessity of Data Integration
