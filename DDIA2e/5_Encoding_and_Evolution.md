@@ -1,3 +1,5 @@
+## 5. Encoding and Evolution
+
 The primary theme of this chapter is **evolvability**: the ability to modify applications easily as requirements change. Because large-scale changes to code and data formats cannot happen instantaneously, systems must be designed to handle the coexistence of old and new versions.
 
 The following are the key takeaways regarding data encoding and flow:
