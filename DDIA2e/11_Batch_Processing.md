@@ -1,3 +1,5 @@
+## 11. Batch Processing
+
 This chapter, **"Batch Processing,"** explores the principles of "offline" data systems that process large volumes of bounded, immutable data to produce derived results, contrasting them with the interactive "online" systems discussed in previous chapters,.
 
 The key takeaways from the sources are as follows:
