@@ -1,3 +1,5 @@
+## 4. Storage and Retrieval
+
 Chapter 4, "Storage and Retrieval," explores the internal mechanisms databases use to store data and locate it efficiently, emphasizing that the choice of a storage engine depends heavily on whether the workload is transactional or analytical,.
 
 The key takeaways from the sources are:
