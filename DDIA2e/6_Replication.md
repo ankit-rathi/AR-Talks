@@ -1,3 +1,5 @@
+## 6. Replication
+
 The primary focus of this chapter is **replication**: keeping a copy of the same data on multiple machines connected via a network. While simple in theory, replication is challenging because it requires managing data changes across nodes while navigating trade-offs between **availability, latency, and consistency**.
 
 The following are the key takeaways regarding strategies and trade-offs in data replication:
