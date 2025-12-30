@@ -1,3 +1,5 @@
+## 7. Sharding
+
 This chapter focuses on **sharding** (also known as partitioning), the process of breaking a large dataset into smaller subsets and distributing them across multiple nodes. While the previous chapters in our conversation history covered how to copy data (replication) and how to encode it, this chapter addresses how to **scale** a system horizontally when data volume or write throughput exceeds the capacity of a single machine.
 
 The following are the key takeaways regarding sharding strategies, rebalancing, and routing:
