@@ -1,3 +1,5 @@
+## 9. The Trouble with Distributed Systems
+
 While our previous discussion focused on the mechanics of database transactions and the ACID guarantees, this chapter, **"The Trouble with Distributed Systems,"** shifts focus to the "messy physical reality" that makes those guarantees so difficult to achieve in a networked environment.
 
 The key takeaways from the sources are as follows:
