@@ -1,3 +1,5 @@
+## 12. Stream Processing
+
 This chapter, **"Stream Processing,"** explores the transition from processing fixed, finite datasets (batch processing) to managing **unbounded data** that arrives incrementally over time. 
 
 The key takeaways from the sources are as follows:
