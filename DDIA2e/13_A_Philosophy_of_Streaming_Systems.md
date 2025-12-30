@@ -33,7 +33,7 @@ Relying solely on database transactions is insufficient for ensuring application
 **Analogy for Understanding Unbundled Systems:**
 Building an unbundled data system is like **organizing a professional kitchen** rather than using a single "do-it-all" microwave. In a professional kitchen, you have specialized stations (the grill, the pastry station, the prep station) all connected by a "ticket" (the event log). While it takes more coordination to set up, this unbundled approach allows the kitchen to handle a much higher volume and variety of orders with far greater precision and reliability than a single, overworked appliance ever could.
 
-### Summary
+### Chapter Summary
 
 In this chapter we discussed new approaches to designing data systems based on ideas from stream processing. We started with the observation that there is no one single tool that can efficiently serve all possible use cases, and so applications necessarily need to compose several different pieces of software to accomplish their goals. We discussed how to solve this data integration problem by using batch processing and event streams to let data changes flow between different systems.
 
