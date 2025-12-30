@@ -1,3 +1,5 @@
+## 14. Doing the Right Thing
+
 Chapter 14 of the sources, titled "Doing the Right Thing," shifts focus from technical architectures to the **ethical responsibilities** of those building data systems. It emphasizes that software engineers must look beyond the technology itself to consider the human consequences of their work.
 
 The following are the key takeaways from this chapter:
