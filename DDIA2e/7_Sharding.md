@@ -29,3 +29,31 @@ Many systems use a **coordination service** like **ZooKeeper** or **etcd** to ma
 Sharding is often used in **Software as a Service (SaaS)** environments to isolate customer data. This provides **resource and permission isolation**, ensures regulatory compliance regarding data residency, and allows for **gradual schema rollouts** by updating one tenant's shard at a time.
 
 An analogy for sharding is a **library's shelving system**. Key-range sharding is like an encyclopedia set where volume 1 covers "A-B" and volume 12 covers "T-Z"; it’s easy to find a range of topics, but the "S" volume might be much heavier than "X." Hash sharding is more like assigning books to shelves based on a random-looking ID number; the books are perfectly spread out, but if you want to find all books about "History," you’ll have to check every single shelf in the building.
+
+### Chapter Summary
+
+In this chapter we explored different ways of sharding a large dataset into smaller subsets. Sharding is necessary when you have so much data that storing and processing it on a single machine is no longer feasible.
+
+The goal of sharding is to spread the data and query load evenly across multiple machines, avoiding hot spots (nodes with disproportionately high load). This requires choosing a sharding scheme that is appropriate to your data, and rebalancing the shards when nodes are added to or removed from the cluster.
+
+We discussed two main approaches to sharding:
+
+- Key range sharding, where keys are sorted, and a shard owns all the keys from some minimum up to some maximum. Sorting has the advantage that efficient range queries are possible, but there is a risk of hot spots if the application often accesses keys that are close together in the sorted order.
+
+In this approach, shards are typically rebalanced by splitting the range into two subranges when a shard gets too big.
+
+- Hash sharding, where a hash function is applied to each key, and a shard owns a range of hash values (or another consistent hashing algorithm may be used to map hashes to shards). This method destroys the ordering of keys, making range queries inefficient, but it may distribute load more evenly.
+
+When sharding by hash, it is common to create a fixed number of shards in advance, to assign several shards to each node, and to move entire shards from one node to another when nodes are added or removed. Splitting shards, like with key ranges, is also possible.
+
+It is common to use the first part of the key as the partition key (i.e., to identify the shard), and to sort records within that shard by the rest of the key. That way you can still have efficient range queries among the records with the same partition key.
+
+We also discussed the interaction between sharding and secondary indexes. A secondary index also needs to be sharded, and there are two methods:
+
+- Local secondary indexes, where the secondary indexes are stored in the same shard as the primary key and value. This means that only a single shard needs to be updated on write, but a lookup of the secondary index requires reading from all shards.
+
+- Global secondary indexes, which are sharded separately based on the indexed values. An entry in the secondary index may refer to records from all shards of the primary key. When a record is written, several secondary index shards may need to be updated; however, a read of the postings list can be served from a single shard (fetching the actual records still requires reading from multiple shards).
+
+Finally, we discussed techniques for routing queries to the appropriate shard, and how a coordination service is often used to keep track of the assigment of shards to nodes.
+
+By design, every shard operates mostly independently—that’s what allows a sharded database to scale to multiple machines. However, operations that need to write to several shards can be problematic: for example, what happens if the write to one shard succeeds, but another fails? We will address that question in the following chapters.
