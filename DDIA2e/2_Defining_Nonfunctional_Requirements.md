@@ -1,3 +1,5 @@
+## 2. Defining Nonfunctional Requirements
+
 The provided sources from Chapter 2, "Defining Nonfunctional Requirements," emphasize that while **functional requirements** define what an application does, **nonfunctional requirements**—such as reliability, scalability, and maintainability—determine if the application is actually usable and sustainable in the long term,.
 
 The key takeaways from this chapter are:
