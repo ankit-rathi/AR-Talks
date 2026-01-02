@@ -70,8 +70,8 @@ Running away = loss of next-day privileges
 ---
 
 ## 🛌 DAILY BASICS
-- Fixed wake-up time
-- Fixed sleep time
+- Fixed wake-up time (9 am)
+- Fixed sleep time (10 pm)
 - Same routine on weekdays
 
 ---
@@ -80,10 +80,11 @@ Running away = loss of next-day privileges
 
 | Behaviour | Result |
 |---------|--------|
-| Abusive words | Phone gone for 24 hours |
+| Shouting/Abuses | No Screen for 24 hours |
 | No study | No screen time |
 | Running outside | Privileges lost next day |
 | Breaking screen rules | Screen removed next day |
+| Breaking other rules | Screen removed next day |
 
 Rules don’t change.  
 No shouting. No debate.
