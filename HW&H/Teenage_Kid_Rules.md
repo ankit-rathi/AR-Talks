@@ -64,6 +64,7 @@ Running away = loss of next-day privileges
   - School attendance
   - Basic study completion
   - Respectful behaviour
+  - Running, cycling & fitness
 
 **No discipline → No cricket**
 
