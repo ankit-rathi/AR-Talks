@@ -21,7 +21,7 @@
 
 **If abusive words are used:**
 - Conversation stops
-- Phone goes for **24 hours**
+- No screen for **24 hours**
 
 ---
 
@@ -39,7 +39,7 @@ Running away = loss of next-day privileges
 
 ## 📚 STUDY
 - Study comes **before** screens
-- Study in **25–30 minute blocks**
+- Study in **60 minute blocks**
 - Phone stays **outside** during study
 - Effort matters more than marks
 
@@ -55,6 +55,7 @@ Running away = loss of next-day privileges
 - No phone during meals
 - Phone stays with parents at night
 - Shorts / Reels are limited
+- TV 30 mins & Tab or Mobile 30 mins
 
 ---
 
