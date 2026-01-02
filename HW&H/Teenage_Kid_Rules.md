@@ -69,6 +69,13 @@ Running away = loss of next-day privileges
 
 ---
 
+## 🍔 OUTSIDE FOOD
+- Outside / fast food allowed **once a week**
+- **Friday only**
+- No requests or bargaining on other days
+
+---
+
 ## 🛌 DAILY BASICS
 - Fixed wake-up time (9 am)
 - Fixed sleep time (10 pm)
@@ -80,11 +87,11 @@ Running away = loss of next-day privileges
 
 | Behaviour | Result |
 |---------|--------|
-| Shouting/Abuses | No Screen for 24 hours |
+| Abusive words | Phone gone for 24 hours |
 | No study | No screen time |
 | Running outside | Privileges lost next day |
 | Breaking screen rules | Screen removed next day |
-| Breaking other rules | Screen removed next day |
+| **Breaking any rule** | **Loss of next preferred activity** |
 
 Rules don’t change.  
 No shouting. No debate.
