@@ -87,11 +87,12 @@ Running away = loss of next-day privileges
 
 | Behaviour | Result |
 |---------|--------|
-| Abusive words | Phone gone for 24 hours |
+| Abuses/Shouting | No screen for 24 hours |
 | No study | No screen time |
 | Running outside | Privileges lost next day |
+| No school | No Screen or Cricket that day |
 | Breaking screen rules | Screen removed next day |
-| **Breaking any rule** | **Loss of next preferred activity** |
+| **Breaking any rule** | **No screen for 24 hours** |
 
 Rules don’t change.  
 No shouting. No debate.
