@@ -1,3 +1,45 @@
+Below is the **exact agenda** I recommend *for your situation*, followed by **timing guidance**.
+
+---
+
+## Recommended agenda (clean, senior-appropriate)
+
+Keep it short. This is what you send.
+
+> **Subject:** Brief agenda for our 25-min conversation
+>
+> Hi [Name],
+> Looking forward to our discussion. Sharing a light agenda in case it’s helpful — very happy to adapt based on what you’d like to focus on.
+>
+> **Proposed agenda (25 mins):**
+> - Quick context on my role and current scope (5 mins)
+> - How I’m thinking about impact beyond delivery, including a small AI-assisted learning initiative I’ve been experimenting with (8–10 mins)
+> - Your guidance on where initiatives like this best fit and what good looks like at my level (8–10 mins)
+> - Open discussion / questions
+>
+> Thanks,
+> [Your Name]
+
+Why this works:
+
+* “**Proposed**” → not prescriptive
+* “**experimenting**” → low risk
+* “**guidance**” → senior-friendly
+* No claims, no hype, no requests
+
+---
+
+## Optimal lead time (important)
+
+### Best window: **24–48 hours before the meeting**
+
+### If the meeting is mid-week
+
+→ Send **1 business day before**
+
+---
+
+
 Great ask. I’ll **simulate this like a real 25-minute skip-level**, not a scripted pitch.
 Tone: calm, senior-friendly, UK banking context, low-ego, high-signal.
 
