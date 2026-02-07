@@ -1,184 +1,187 @@
 # Meeting on AI-assisted Visual Notes
 
-Below is the **exact agenda** I recommend *for your situation*, followed by **timing guidance**.
+1. **Reframe a sharp, senior-safe agenda** (25 mins, no fluff)
+2. **Simulate the skip-level conversation** realistically — including how *they* might think and respond
+
+I’ll keep this aligned with:
+
+* restructuring context
+* your AI Visual Notes initiative
+* not sounding political, needy, or over-eager
 
 ---
 
-## Recommended agenda (clean, senior-appropriate)
+## 1️⃣ Reframed Skip-Level Agenda (25 mins)
 
-Keep it short. This is what you send.
+### Purpose (internal, not spoken)
 
-> **Subject:** Brief agenda for our 25-min conversation
->
-> Hi [Name],
-> Looking forward to our discussion. Sharing a light agenda in case it’s helpful — very happy to adapt based on what you’d like to focus on.
->
-> **Proposed agenda (25 mins):**
-> - Quick context on my role and current scope (5 mins)
-> - How I’m thinking about impact beyond delivery, including a small AI-assisted learning initiative I’ve been experimenting with (8–10 mins)
-> - Your guidance on where initiatives like this best fit and what good looks like at my level (8–10 mins)
-> - Open discussion / questions
->
-> Thanks,
-> [Your Name]
-
-Why this works:
-
-* “**Proposed**” → not prescriptive
-* “**experimenting**” → low risk
-* “**guidance**” → senior-friendly
-* No claims, no hype, no requests
+> Sense-check direction, show judgment, and gently position yourself as a calm AI literacy contributor — not a change agent.
 
 ---
 
-## Optimal lead time (important)
+### **Agenda you can send beforehand (professional & light)**
 
-### Best window: **24–48 hours before the meeting**
+**Subject:** Skip-level discussion — context, delivery learnings, and AI literacy contribution
 
-### If the meeting is mid-week
+**Agenda (25 mins):**
 
-→ Send **1 business day before**
+1. **Quick context & current scope** (5 mins)
+   – My current role, recent delivery, and where my focus is now
+
+2. **Delivery learnings & operating constraints** (7 mins)
+   – Observations from recent delivery and working within regulatory/data constraints
+
+3. **AI literacy contribution (informal)** (8 mins)
+   – Sharing an initiative I’ve been running alongside delivery to support AI understanding
+   – Sense-check on whether this is useful and how it should evolve (or not)
+
+4. **Guidance & close** (5 mins)
+   – Any feedback on direction, focus areas, or things to be mindful of
+
+That’s it.
+No “strategy”, no “proposal”, no “asks”.
 
 ---
 
+## 2️⃣ Simulated Skip-Level Conversation (25 mins)
 
-Great ask. I’ll **simulate this like a real 25-minute skip-level**, not a scripted pitch.
-Tone: calm, senior-friendly, UK banking context, low-ego, high-signal.
-
-I’ll mark **time blocks** so you can feel the flow.
+I’ll mark **You** and **Skip-Level**, and also add *what they’re thinking* where useful.
 
 ---
 
-## ⏱️ 0–3 mins | Opening & tone-setting
+### **0–2 mins | Opening**
 
-**Skip-level:**
-“Hi, good to meet you. Thanks for reaching out. How are things going?”
+**Skip-Level:**
+“Good to meet you. Thanks for reaching out. What would you like to focus on today?”
+
+*(They’re assessing: clarity, maturity, agenda control.)*
 
 **You:**
-“Thanks for making the time. Things are going well overall. I really appreciate the opportunity to have this conversation — I mainly wanted to get your perspective.”
+“Thanks for the time. I thought I’d briefly give context on my recent delivery work, share a few observations, and then get your perspective on an informal AI literacy effort I’ve been running alongside.”
 
-*(This signals respect + curiosity, not agenda.)*
-
----
-
-## ⏱️ 3–8 mins | Context & current scope
-
-**Skip-level:**
-“Sure. Why don’t you give me a quick sense of what you’re working on?”
-
-**You:**
-“Currently, my core focus is on [briefly state your role — data platform / analytics / engineering / governance]. Most of my time goes into delivery, stakeholder coordination, and ensuring we stay within regulatory and data controls.
-
-Beyond delivery, I’ve been thinking more deliberately about how I can add impact at a department level — especially given where the organisation is heading on AI.”
-
-*(You’ve now earned permission to talk about AI.)*
+Calm. Structured. No apology.
 
 ---
 
-## ⏱️ 8–12 mins | Gentle transition to AI literacy
-
-**Skip-level:**
-“Yes, AI is definitely a big focus. What have you been thinking?”
+### **2–7 mins | Context & Scope**
 
 **You:**
-“One thing I noticed is that while there’s a lot of momentum around AI, people engage with it at very different levels of comfort. For many non-technical colleagues, the barrier isn’t tools — it’s conceptual understanding.
+“Recently I supported a delivery as product owner, tech lead, and scrum master with a small team. Post-deployment, we all moved to different projects, which is fairly typical.
+Right now, my focus is on [current project/scope], working within the usual data sensitivity and governance constraints we have in the bank.”
 
-So I’ve been experimenting, very informally, with a way to support AI literacy without touching systems, data, or models.”
+*(This shows breadth + realism.)*
 
-*(Key words: experimenting, informal, no systems/data.)*
+**Skip-Level:**
+“That’s helpful. Sounds like a lot of hats.”
+
+*(Neutral validation.)*
+
+**You:**
+“Yes — it was intense, but it clarified for me how important shared understanding is, especially around data and AI concepts, not just tooling.”
 
 ---
 
-## ⏱️ 12–16 mins | Introducing the visual note (without pitching)
-
-**Skip-level:**
-“That sounds interesting. What does that look like?”
+### **7–14 mins | Delivery Learnings**
 
 **You:**
-“It’s very simple. I use AI as a thinking aid to help me create one-page visual notes that explain data and AI concepts in plain language — focused on decisions, judgment, and risk rather than technology.
+“One pattern I keep noticing is that friction around AI isn’t really about intent — it’s about uneven understanding.
+People either overestimate what AI can do, or avoid it entirely because of regulation and risk.”
 
-Would it be okay if I show you one example? It’s the most basic one.”
+*(You are framing a **systemic issue**, not complaining.)*
 
-*(Always ask before showing.)*
+**Skip-Level:**
+“That’s a fair observation.”
 
-**Skip-level:**
-“Sure, go ahead.”
+*(They agree because it’s true.)*
+
+**You:**
+“And given our environment, I don’t think pushing tools aggressively is the answer. What seems missing is a shared mental model.”
+
+This sentence lands **very well** with senior leaders.
 
 ---
 
-## ⏱️ 16–18 mins | Showing the ONE visual note
-
-*(You show **“What Is a Decision?”**)*
+### **14–20 mins | AI-Assisted Visual Notes (Core Moment)**
 
 **You:**
-“This one doesn’t teach AI at all. It starts with decision-making — because AI only exists to support decisions.
+“Alongside delivery, I’ve been experimenting with a very lightweight approach — creating visual notes on core data and AI concepts.
+They’re AI-assisted, but the intent is education, not automation.”
 
-The idea is: if people understand what a decision really is — a choice made before outcomes are known — then concepts like uncertainty, data, models, and risk start to make sense naturally.”
+Pause. Let them react.
 
-*(Stop talking. Let them look.)*
+**Skip-Level:**
+“Okay — tell me more.”
+
+*(This is your opening.)*
+
+**You:**
+“I created a Microsoft Engage community called *Data & AI Visual Notes*. I used to share one visual note a week — things like how to think about AI risk, decision boundaries, or where AI fits safely in regulated environments.
+It got some organic traction, but I paused during delivery pressure.”
+
+Key phrasing:
+
+* “used to”
+* “organic traction”
+* “paused due to delivery”
+
+No drama.
+
+**You (important):**
+“I’ve recently shared one again — quietly, without positioning it as a program. I wanted to sense-check whether this kind of contribution is useful, or whether it’s something I should keep very informal.”
+
+You are **asking for guidance**, not permission.
 
 ---
 
-## ⏱️ 18–21 mins | Leader reaction & alignment
+### **20–23 mins | Likely Skip-Level Response**
 
-**Skip-level:**
-“This is actually quite clear. Who is this intended for?”
+**Skip-Level (likely):**
+“This sounds sensible. We do want people to build AI understanding, especially responsibly. As long as it’s compliant and not distracting from delivery, this feels positive.”
 
-**You:**
-“Primarily non-technical stakeholders — risk, ops, product, even leadership. It’s not meant to train people. It’s meant to give a shared mental model so conversations about AI are less abstract and less intimidating.”
+*(Translation: “Don’t overdo it, but I like it.”)*
 
-*(You’ve positioned it as *language alignment*, not education.)*
+They might add:
 
----
+* “Keep it lightweight”
+* “Don’t brand it as official”
+* “Happy for people to learn from it”
 
-## ⏱️ 21–23 mins | Asking for guidance (not approval)
-
-**You:**
-“I’m not proposing anything formal. I wanted to sanity-check whether contributions like this are useful, and if so, where they best fit — or if it’s better kept informal.”
-
-**Skip-level:**
-“I think this kind of thinking is useful, especially if it stays lightweight.”
-
-*(This is the ideal response.)*
+All green signals.
 
 ---
 
-## ⏱️ 23–25 mins | Closing strong, low-ego
+### **23–25 mins | Close (Very Important)**
 
 **You:**
-“That’s helpful to hear. I’ll keep it informal and aligned, and I’ll be mindful of boundaries. If at any point it feels misaligned, I’m completely comfortable stopping.”
+“That’s helpful. I’m not looking to formalise it right now — I’ll keep it optional and low-key, and focus on delivery first.
+If there’s anything you think I should be mindful of, I’d appreciate the guidance.”
 
-**Skip-level:**
-“Sounds good. Thanks for sharing this.”
+This line shows **judgment and containment** — extremely senior-safe.
 
-**You:**
-“Thank you — I really appreciate the perspective.”
+**Skip-Level:**
+“Sounds good. Keep doing what you’re doing.”
+
+Meeting ends on trust.
 
 ---
 
-# What you accomplished (quietly)
+## What You Achieved (without saying it)
 
-Without saying it explicitly, you demonstrated:
+* You showed **initiative without noise**
+* You aligned AI with **education and risk awareness**
+* You avoided appearing political during restructuring
+* You positioned yourself as a **calm stabiliser**, not a disruptor
 
-* Strategic thinking
-* AI maturity (not hype)
-* Regulatory awareness
-* Teaching mindset
-* Leadership readiness
-
-And most importantly: **you didn’t ask for permission — you asked for judgment.**
-
-That’s how senior leaders think.
+This is *exactly* how senior leaders prefer AI initiatives to surface.
 
 ---
 
 If you want next:
 
-* I can simulate **tough follow-up questions**
-* Or help you plan **what to do if this gets traction**
-* Or help you prepare a **2nd visual note** for a future conversation
+* I can refine this into a **one-page prep note** for you
+* Or help you pick the **single safest visual note** to reference if they ask “can you show me one?”
 
-You handled this like someone playing the long game.
+You’re playing this very well.
 
 ---
 ---
