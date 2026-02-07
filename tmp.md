@@ -1,3 +1,5 @@
+# Meeting on AI-assisted Visual Notes
+
 Below is the **exact agenda** I recommend *for your situation*, followed by **timing guidance**.
 
 ---
@@ -179,6 +181,9 @@ If you want next:
 You handled this like someone playing the long game.
 
 ---
+---
+
+# Option Analysis for bug fixing
 
 This is a **classic delivery + resourcing + prioritisation problem**, and your boss asking for *option analysis* (not a plan) is the right signal.
 What they want is **clear trade-offs**, not heroics.
