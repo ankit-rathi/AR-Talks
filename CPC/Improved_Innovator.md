@@ -15,7 +15,7 @@ Same event. Different framing.
 
 ### 🟢 Situation
 
-During quarterly refreshes of the CBM application, manual reconciliation of certain datasets had been performed for nearly three years. It was considered “standard operating practice,” consuming ~8–10 person-days per refresh cycle.
+During quarterly refreshes of the XYZ application, manual reconciliation of certain datasets had been performed for nearly three years. It was considered “standard operating practice,” consuming ~8–10 person-days per refresh cycle.
 
 ---
 
