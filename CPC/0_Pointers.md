@@ -7,7 +7,7 @@
 - 2022  → data engineering - garbage in, garbage out
 - 2026  → data management - customer-first, trusted data, data quality, data lineage and ownership
 
-### Motivation and Fitness
+### Motivation and Fitness Pointers
 * **What I look in work environment**  → Problem Solving via Collaboration, Option analysis and trade-offs discussions
 * **What kind of work excites me** → Requirements, Design, Building scalable and resilient solution
 * **When I feel Productive and Fulfilled** → Working on end to end problems, building scalable and resilient solution and frameworks
