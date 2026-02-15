@@ -1,6 +1,6 @@
 
 ### Intro Pointers
-- 2005  → SQL developer - LGRS application - business queries
+- 2005  → SQL developer - writing business queries
 - 2007  → ETL/BI - building pipelines and reports (data warehouse)
 - 2012  → data architect - data lifecycle management
 - 2016  → data science - Coursera and Kaggle
