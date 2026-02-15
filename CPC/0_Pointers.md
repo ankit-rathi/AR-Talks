@@ -46,4 +46,3 @@
 - When has your knowledge helped your colleague or a customer make a better decision?
 - When has showing genuine care for customer or colleague really helped your relationship with them?
 
-I have added pointers with each CPC skill so that I can remember which story I need to cover when these questions are asked. Could you please store and lock them for my future references?
