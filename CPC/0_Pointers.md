@@ -37,16 +37,32 @@
 **Improved Innovator** - pointer: Used dynamic DAGs to keep the orchestration flexible
 - When have you taken the opportunity to improve something for the customer or the colleagues? 
 - When have you experimented with a new way of doing something?
+> - S -
+> - T -
+> - A -
+> - R -
 
 **Critical Thinker** - pointer: Solved and automated Manual reconciliation in CBM ETL batch
 - When have you considered multiple sources of information or data when solving a problem?
 - When have you made a decision that had a significant positive impact on customer or colleague?
+> - S -
+> - T -
+> - A -
+> - R -
 
 **Change Ready** - pointer: adjusting the individual contributors to handle shallow tasks effectively
 - When has reflecting on your performance helped you achieve better results?
 - Talk me through how you have raised the standard of work delivery by your team.
+> - S -
+> - T -
+> - A -
+> - R -
 
 **Trusted Advisor** - pointer: RAS Excel dashboard converted to strategic solution with Metric platform, Snowflake and Quicksight
 - When has your knowledge helped your colleague or a customer make a better decision?
 - When has showing genuine care for customer or colleague really helped your relationship with them?
+> - S -
+> - T -
+> - A -
+> - R -
 
