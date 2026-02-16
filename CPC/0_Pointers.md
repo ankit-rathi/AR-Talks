@@ -29,7 +29,7 @@
 **Connected** - pointer: HLSD was rejected by DAF (Data Architecture Forum)
 - When have you needed to work collaboratively with someone who approached work differently to you?
 - When have you led a team that wasn't working as well as it could?
-> - S - Our HLSD was rejected by DAF team due to existing technical debt
+> - S - HLSD for CBM project was rejected by DAF team due to existing technical debt
 > - T - I needed to get the approval from DAF on the HLSD to deploy the business critical app in prod
 > - A - Connected with forum member to understand the concerns, collaborated with data source owners to understand the constraints, documented the story around the design
 > - R - I was able to present the same design with current limitations and our future plan to address and got DAF approval
@@ -37,15 +37,15 @@
 **Improved Innovator** - pointer: Used dynamic DAGs to keep the orchestration flexible
 - When have you taken the opportunity to improve something for the customer or the colleagues? 
 - When have you experimented with a new way of doing something?
-> - S -
-> - T -
-> - A -
-> - R -
+> - S - As part of DSARs project, we were sourcing customer data from various data sources based on the subject access request. But different requests needed data from different source systems.
+> - T - We needed an orchestration mechanism which could dynamically add tasks to a DAG
+> - A - I suggested the team to try dynamic DAG creation and execution based on the request, dynamic DAG was built and stored in json format
+> - R - We were able to handle the requirement by keeping the orchestration flexible based on incoming request without increasing the complexity of the system
 
 **Critical Thinker** - pointer: Solved and automated Manual reconciliation in CBM ETL batch
 - When have you considered multiple sources of information or data when solving a problem?
 - When have you made a decision that had a significant positive impact on customer or colleague?
-> - S -
+> - S - 
 > - T -
 > - A -
 > - R -
