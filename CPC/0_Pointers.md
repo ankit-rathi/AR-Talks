@@ -61,8 +61,8 @@
 **Trusted Advisor** - pointer: RAS Excel dashboard converted to strategic solution with Metric platform, Snowflake and Quicksight
 - When has your knowledge helped your colleague or a customer make a better decision?
 - When has showing genuine care for customer or colleague really helped your relationship with them?
-> - S -
-> - T -
-> - A -
-> - R -
+> - S - Business stakeholders built a RAS dashboard using tactical data in an excel sheet, they wanted a technical solution with forms and dashboards together.
+> - T - I needed to make sure that they understand that strategic solutions are built differently while meeting all their business requirements.
+> - A - I explained them how strategic solution works which may be a bit different than current tactical solution but would be more effective in longer run. We demoed them using Metric platform, Snowflake and Quicksight to make them comfortable.
+> - R - They were convinced after the explanation and seeing our demo, we worked with them to deliver the strategic solution which met all the requirements by stakeholders.
 
