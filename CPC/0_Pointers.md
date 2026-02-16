@@ -45,18 +45,18 @@
 **Critical Thinker** - pointer: Solved and automated Manual reconciliation in CBM ETL batch
 - When have you considered multiple sources of information or data when solving a problem?
 - When have you made a decision that had a significant positive impact on customer or colleague?
-> - S - 
-> - T -
-> - A -
-> - R -
+> - S - ETL batch in CBM application required manual reconciliation due to complexity in incoming data feeds, which required 2 FTEs for 4-5 days every month for last 3 years.
+> - T - I needed to find a way if we could automate this part of the batch without any manual interventions.
+> - A - We sat down we upstream data providers on how they were preparing the data, by looking at the patterns and relationship in those data sets we identified that there can be a logical way to automate this stuff.
+> - R - We automated the whole ETL batch and saved 2 FTEs 4-5 days of involvement in manual reconciliation.
 
 **Change Ready** - pointer: adjusting the individual contributors to handle shallow tasks effectively
 - When has reflecting on your performance helped you achieve better results?
 - Talk me through how you have raised the standard of work delivery by your team.
-> - S -
-> - T -
-> - A -
-> - R -
+> - S - Technical resources are more inclined towards deep work, they needed to collaborate on large project intermittently and were struggling with context switching
+> - T - I needed to device a way to collaborate without affecting their current work to make overall delivery effective.
+> - A - I myself am a deep worker and have struggled in the past, I suggested them to keep an hour window during the day for shallow work and collboration, helping each other.
+> - R - Team members liked this approach and could help each other on various issue without disrupting their work.
 
 **Trusted Advisor** - pointer: RAS Excel dashboard converted to strategic solution with Metric platform, Snowflake and Quicksight
 - When has your knowledge helped your colleague or a customer make a better decision?
