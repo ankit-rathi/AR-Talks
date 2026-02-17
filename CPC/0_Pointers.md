@@ -8,6 +8,7 @@
 - Last year → SW → two major problems → data ownership → governance standards
 - Data marketplace → clear ownership with producuers → executable data governance standards → OBDQ framework
 - My motivation → OBDQ framework → bank-wide impact → data foundations
+- Personal initiative → Visual Notes on Data and AI Concepts
 
 ---
 
