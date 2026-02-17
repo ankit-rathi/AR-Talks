@@ -1,13 +1,13 @@
 
 ### Intro Pointers
-- Spent over 20 years working across multiple layers of the data value chain
-- From writing SQL queries to building ETL pipelines to designing database/data warehouse to end-to-end data lifecycle management
-- Around 2016, moved into data science to understand how analytical outcomes depend on data quality and integrity
-- Participated in Kaggle competitions and published two books on data science
-- In recent years, focus has shifted to data engineering, leading data teams to build reusable frameworks imprving ingestion and quality standards
-- Last year discussed with a SW about two major problems in our data ecosystem: data ownership and governance standards
-- Happy to see we are now moving towards data marketplace with clear ownership with producuers and building executable data governance standards like OBDQ framework
-- Above is my motivation for applying this role, where I can contribute to OBDQ framework which would have bank-wide impact on data foundations
+- 20 years → multiple layers → data value chain
+- writing SQL queries → building ETL pipelines → designing database/data warehouse → end-to-end data lifecycle management
+- 2016 → data science → analytical outcomes → data quality and integrity
+- Kaggle competitions → two books on data science
+- Recent years → data engineering → leading data teams → reusable frameworks → ingestion standards
+- Last year → SW → two major problems → data ownership → governance standards
+- Data marketplace → clear ownership with producuers → executable data governance standards → OBDQ framework
+- My motivation → OBDQ framework → bank-wide impact → data foundations
 
 ### Motivation and Fitness Pointers
 * **What I look in work environment**  → Problem Solving via Collaboration, Option analysis and trade-offs discussions
