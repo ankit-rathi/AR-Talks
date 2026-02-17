@@ -9,6 +9,8 @@
 - Data marketplace → clear ownership with producuers → executable data governance standards → OBDQ framework
 - My motivation → OBDQ framework → bank-wide impact → data foundations
 
+---
+
 ### Motivation and Fitness Pointers
 * **What I look in work environment**  → Problem Solving via Collaboration → Option analysis → Trade-offs discussions
 * **What kind of work excites me** → Requirements → Design → Building scalable and resilient solution
@@ -16,6 +18,7 @@
 * **How this team contributes to Bank's Purpose and Values** → data management is foundational → data quality is critical → risk amangement, regulatory compliance and executive decision making
 * **Why do I want to work in this team** → data management and data uqality is non-negotiable → want to build scalable and resilient solution/framework for pan-bank
 
+---
 
 ### CPC Pointers
 * **Connected** → HLSD rejected by Data Architecture Forum (DAF)
@@ -68,6 +71,8 @@
 > - A - I explained them how strategic solution works which may be a bit different than current tactical solution but would be more effective in longer run. We demoed them using Metric platform, Snowflake and Quicksight to make them comfortable.
 > - R - They were convinced after the explanation and seeing our demo, we worked with them to deliver the strategic solution which met all the requirements by stakeholders.
 
+---
+
 **My Project**
 - S
   * Needed to operationalize GDPR/CCPA DSAR compliance
@@ -90,7 +95,17 @@
   * Enabled faster onboarding of new domain system
   * Increased auditability and compliance confidence
 
-**Thier Project**
+---
+
+**Their Project**
+- Definition
+  * Define → Validate → Insert
+- Execution
+  * Read → Attach → Execute → Retrieve → Transform → Write
+- Action
+  * Visualize → Log → Remediate
+
+
 - Domain team defines DQ rules
 - OBDQ validates + registers rule metadata
 - During ingestion / batch:
