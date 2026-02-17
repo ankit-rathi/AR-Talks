@@ -1,11 +1,13 @@
 
 ### Intro Pointers
-- 2005  → SQL developer - writing business queries
-- 2007  → ETL/BI - building pipelines and reports (data warehouse)
-- 2012  → data architect - data lifecycle management
-- 2016  → data science - Coursera and Kaggle
-- 2022  → data engineering - garbage in, garbage out
-- 2026  → data management - customer-first, trusted data, data quality, data lineage and ownership
+- Career spanning over 20 years, in various roles in data domain
+- From writing SQL queries to building ETL pipelines to designing database/data warehouse to end-to-end data lifecycle management
+- Around 2016, I moved into data science to understand how analytical outcomes depend on data quality and integrity
+- Participated in Kaggle competitions and writing two books on data science
+- Now focus has shifted to data engineering, leading data teams to build reusable frameworks imprving ingestion and quality standards
+- Recently discussed with a senior leader about two major problems in our data ecosystem: data ownership and governance standards
+- Happy to see we are now moving towards data marketplace with clear ownership with producuers and building executable data governance standards like OBDQ framework
+- Above is my motivation for applying this role, where I can contribute to OBDQ framework which would have bank-wide impact
 
 ### Motivation and Fitness Pointers
 * **What I look in work environment**  → Problem Solving via Collaboration, Option analysis and trade-offs discussions
