@@ -10,9 +10,9 @@
 - My motivation → OBDQ framework → bank-wide impact → data foundations
 
 ### Motivation and Fitness Pointers
-* **What I look in work environment**  → Problem Solving via Collaboration, Option analysis and trade-offs discussions
-* **What kind of work excites me** → Requirements, Design, Building scalable and resilient solution
-* **When I feel Productive and Fulfilled** → Working on end to end problems, building scalable and resilient solution and frameworks
+* **What I look in work environment**  → Problem Solving via Collaboration → Option analysis → Trade-offs discussions
+* **What kind of work excites me** → Requirements → Design → Building scalable and resilient solution
+* **When I feel Productive and Fulfilled** → Working on end-to-end problems → building scalable and resilient solution and frameworks
 * **How this team contributes to Bank's Purpose and Values** → data management is foundational, data quality is critical, risk amangement, regulatory compliance and executive decision making
 * **Why do I want to work in this team** → data management and data uqality is non-negotiable, want to build scalable and resilient solution/framework for pan-bank
 
