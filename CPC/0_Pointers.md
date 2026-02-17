@@ -68,3 +68,27 @@
 > - A - I explained them how strategic solution works which may be a bit different than current tactical solution but would be more effective in longer run. We demoed them using Metric platform, Snowflake and Quicksight to make them comfortable.
 > - R - They were convinced after the explanation and seeing our demo, we worked with them to deliver the strategic solution which met all the requirements by stakeholders.
 
+**My Project**
+- S
+> - Needed to operationalize GDPR/CCPA DSAR compliance
+> - Customer data was fragmented across structured and unstructured, on-prem and cloud, domain-owned platforms with heterogeneous latency
+- T
+> - Decouple orchestration from domain systems
+> - Minimize blast radius of failures
+> - Support hybrid cloud execution
+> - Enforce strict auditability
+> - Be extensible for onboarding future domains
+- A
+> - Event-driven architecture
+> - Registration, Processing and Servicing layers
+> - Identity Resolution, Failure Isolation & Resilience
+> - Eventual consistency, Federated retrieval, Serverless compute
+- R
+> - Automated the majority of DSAR requests
+> - Improved SLA adherence significantly
+> - Reduced manual intervention
+> - Enabled faster onboarding of new domain system
+> - Increased auditability and compliance confidence
+
+**Thier Project**
+
