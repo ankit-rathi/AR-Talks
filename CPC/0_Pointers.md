@@ -70,25 +70,36 @@
 
 **My Project**
 - S
-> - Needed to operationalize GDPR/CCPA DSAR compliance
-> - Customer data was fragmented across structured and unstructured, on-prem and cloud, domain-owned platforms with heterogeneous latency
+  * Needed to operationalize GDPR/CCPA DSAR compliance
+  * Customer data was fragmented across structured and unstructured, on-prem and cloud, domain-owned platforms with heterogeneous latency
 - T
-> - Decouple orchestration from domain systems
-> - Minimize blast radius of failures
-> - Support hybrid cloud execution
-> - Enforce strict auditability
-> - Be extensible for onboarding future domains
+  * Decouple orchestration from domain systems
+  * Minimize blast radius of failures
+  * Support hybrid cloud execution
+  * Enforce strict auditability
+  * Be extensible for onboarding future domains
 - A
-> - Event-driven architecture
-> - Registration, Processing and Servicing layers
-> - Identity Resolution, Failure Isolation & Resilience
-> - Eventual consistency, Federated retrieval, Serverless compute
+  * Event-driven architecture
+  * Registration, Processing and Servicing layers
+  * Identity Resolution, Failure Isolation & Resilience
+  * Eventual consistency, Federated retrieval, Serverless compute
 - R
-> - Automated the majority of DSAR requests
-> - Improved SLA adherence significantly
-> - Reduced manual intervention
-> - Enabled faster onboarding of new domain system
-> - Increased auditability and compliance confidence
+  * Automated the majority of DSAR requests
+  * Improved SLA adherence significantly
+  * Reduced manual intervention
+  * Enabled faster onboarding of new domain system
+  * Increased auditability and compliance confidence
 
 **Thier Project**
+- Domain team defines DQ rules
+- OBDQ validates + registers rule metadata
+- During ingestion / batch:
+  * OBDQ fetches rules
+  * Triggers Glue DQ execution
+- Glue evaluates rules
+- Results stored centrally
+- OBDQ standardizes output
+- QuickSight dashboards visualize health
+- SMUS analyzes historical trends
+- Failures logged for remediation
 
