@@ -1,6 +1,6 @@
 
 ### Intro Pointers
-- 20 years → multiple layers → data value chain
+- 20 years → data domain → various roles → data value chain
 - writing SQL queries → building ETL pipelines → designing database/data warehouse → end-to-end data lifecycle management
 - 2016 → data science → analytical outcomes → data quality and integrity
 - Kaggle competitions → two books on data science
