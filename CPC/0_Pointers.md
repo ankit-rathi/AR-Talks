@@ -5,8 +5,8 @@
 - 2016 → data science → analytical outcomes → data quality and integrity
 - Kaggle competitions → two books on data science
 - Recent years → data engineering → leading data teams → reusable frameworks → ingestion standards
-- Last year → SW → two major problems → data ownership → governance standards
-- Data marketplace → clear ownership with producuers → executable data governance standards → OBDQ framework
+- Last year → SW → DMOP/Arago --> two major problems → data ownership → governance/quality controls
+- Data marketplace → clear ownership with producuers → executable data governance controls → OBDQ framework
 - My motivation → OBDQ framework → bank-wide impact → data foundations
 - Personal initiative → Visual Notes on Data and AI Concepts → Engage Community → 300+ Members
 
