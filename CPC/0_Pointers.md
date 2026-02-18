@@ -2,8 +2,7 @@
 ### Intro Pointers
 - 20 years → data domain → various roles → data value chain
 - writing SQL queries → building ETL pipelines → designing database/data warehouse → end-to-end data lifecycle management
-- 2016 → data science → analytical outcomes → data quality and integrity
-- Kaggle competitions → two books on data science
+- 2016 → data science Kaggle competitions → two books on data science → analytical outcomes → data quality and integrity
 - Recent years → data engineering → leading data teams → reusable frameworks → ingestion standards
 - Last year → SW → DMOP/Arago --> two major problems → data ownership → governance/quality controls
 - Data marketplace → clear ownership with producuers → executable data governance controls → OBDQ framework
