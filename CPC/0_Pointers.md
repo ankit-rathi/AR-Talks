@@ -106,6 +106,7 @@
 - Action
   * Visualize → Log → Remediate
 
+> --
 
 - Domain team defines DQ rules
 - OBDQ validates + registers rule metadata
