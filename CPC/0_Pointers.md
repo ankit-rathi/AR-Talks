@@ -74,7 +74,7 @@
 
 ---
 
-**My Project**
+### My Project
 - S
   * Needed to operationalize GDPR/CCPA DSAR compliance
   * Customer data was fragmented across structured and unstructured, on-prem and cloud, domain-owned platforms with heterogeneous latency
@@ -98,7 +98,7 @@
 
 ---
 
-**Their Project**
+### Their Project
 - Definition
   * Define → Validate → Insert
 - Execution
