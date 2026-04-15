@@ -120,6 +120,8 @@ However, as nationalism became more aggressive, it also led to conflicts and war
 
 ---
 
+# Summary
+
 These study notes are based on the chapter **"The Rise of Nationalism in Europe"** and are structured to help a Class 10 student understand the key events and concepts.
 
 ### 1. Frédéric Sorrieu’s Vision (1848)
