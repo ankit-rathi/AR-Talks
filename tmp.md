@@ -1,3 +1,5 @@
+# Power Sharing
+
 These study notes for **Class 10 Political Science: Power-sharing** break down the chapter into simple concepts and explain the technical terms (jargon) used in the text.
 
 ### 1. What is Power-sharing?
