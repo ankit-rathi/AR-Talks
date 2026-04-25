@@ -3,7 +3,7 @@
 These study notes for **Class 10 Political Science: Power-sharing** break down the chapter into simple concepts and explain the technical terms (jargon) used in the text.
 
 ### 1. What is Power-sharing?
-In a democracy, power does not stay with just one person or one branch of government. Instead, it is shared among different parts, like the people who make laws, the people who carry them out, and the judges. An intelligent sharing of power is essential to a successful democracy.
+In a democracy, power does not stay with just one person or one branch of government. Instead, it is shared among different parts, like the people who make laws (Legislative Branch), the people who carry them out (Executive Branch), and the judges (Judiciary Branch). An intelligent sharing of power is essential to a successful democracy.
 
 ### 2. Case Study: Belgium (Accommodation)
 Belgium is a small European country with a very complex **ethnic** mix. 
