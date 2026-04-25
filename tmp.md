@@ -265,15 +265,3 @@ Keyword + Explanation + Example
 # 🎯 Final Insight
 
 > Power sharing is not just about dividing power—it is about **managing diversity in a democracy**
-
----
-
-# 🧠 One-line takeaway
-
-👉 If you remember:
-
-* **Forms of power sharing**
-* **Belgium vs Sri Lanka**
-* **Keywords (prudential, moral, majoritarianism)**
-
-➡️ You can answer almost any question from this chapter.
