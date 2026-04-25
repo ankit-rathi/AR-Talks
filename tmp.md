@@ -1,42 +1,279 @@
-# Power Sharing
+# 🧠 📘 *Power Sharing* — Smart Notes (Keyword-Based)
 
-These study notes for **Class 10 Political Science: Power-sharing** break down the chapter into simple concepts and explain the technical terms (jargon) used in the text.
+---
 
-### 1. What is Power-sharing?
-In a democracy, power does not stay with just one person or one branch of government. Instead, it is shared among different parts, like the people who make laws (Legislative Branch), the people who carry them out (Executive Branch), and the judges (Judiciary Branch). An intelligent sharing of power is essential to a successful democracy.
+# 🟢 1) Core Idea of the Chapter
 
-### 2. Case Study: Belgium (Accommodation)
-Belgium is a small European country with a very complex **ethnic** mix. 
-*   **The Problem:** 59% of the people speak Dutch, while 40% speak French. In the capital, Brussels, the situation is reversed: 80% speak French and 20% speak Dutch. This led to tensions because the French minority was richer and more powerful than the Dutch majority.
-*   **The Solution:** Between 1970 and 1993, Belgium changed its constitution four times to ensure everyone could live together. 
-    *   **Equal Representation:** They decided that the central government must have an equal number of Dutch and French-speaking ministers.
-    *   **State Power:** Many powers were taken from the central government and given to state governments.
-    *   **Community Government:** They created a third level of government elected by people of one language group to handle cultural and educational issues.
+Power sharing is about:
 
-### 3. Case Study: Sri Lanka (Majoritarianism)
-Sri Lanka is an island nation with two main groups: Sinhala speakers (74%) and Tamil speakers (18%).
-*   **The Problem:** After independence in 1948, the Sinhala leaders used their majority to establish **Majoritarianism**. They made Sinhala the only official language, gave Sinhalas preference for jobs, and made Buddhism the state-protected religion.
-*   **The Result:** Tamils felt ignored and discriminated against, leading to a feeling of "alienation". This distrust eventually turned into a violent **Civil War** that lasted until 2009, causing thousands of deaths and ruining the economy.
+👉 **Distributing power among different groups in society**
 
-### 4. Why is Power-sharing Important?
-The sources provide two main reasons why sharing power is a good idea:
-1.  **Prudential Reasons:** It helps reduce the chance of conflict between different social groups. While the majority forcing its will might seem easy at first, it eventually hurts the unity of the whole country.
-2.  **Moral Reasons:** Power-sharing is the "very spirit of democracy". In a true democracy, people have the right to be consulted on how they are governed.
+Why?
 
-### 5. Common Forms of Power-sharing
-Modern democracies usually share power in four ways:
-*   **Horizontal Distribution:** Power is shared among different "organs" of government (Legislature, Executive, and Judiciary). This creates a system of **Checks and Balances** where each part watches over the others.
-*   **Vertical Distribution:** Power is shared between different levels of government, like a Central/Union government for the whole country and State governments for specific regions.
-*   **Social Groups:** Power can be shared among religious or linguistic groups, such as the "Community Government" in Belgium or reserved seats for women and weaker sections in India.
-*   **Political Parties and Pressure Groups:** Competition between different parties ensures power doesn't stay in one hand. Sometimes, if no single party wins, they form a **Coalition Government**.
+* To reduce conflict
+* To ensure stability
+* To strengthen democracy
 
-***
+---
 
-### 🎓 Glossary of Jargon and Keywords
-*   **Ethnic:** A social division based on shared culture or common ancestry.
-*   **Majoritarianism:** The belief that the majority community should be allowed to rule however it wants, even if it ignores the needs of the minority.
-*   **Civil War:** A violent conflict between opposing groups within the same country that becomes so intense it looks like a real war.
-*   **Prudential:** Making a decision based on a careful calculation of gains and losses, rather than just on what feels "right" or "wrong".
-*   **Checks and Balances:** A system where different branches of government make sure no one branch gets too much power.
-*   **Federal Government:** A system where power is divided between a central authority and smaller regional or state governments.
-*   **Coalition Government:** A government formed by two or more political parties joining together because no single party won enough votes to rule alone.
+# 🟡 2) Case Study 1: Belgium vs Sri Lanka
+
+---
+
+## 🇧🇪 Belgium (Successful Example)
+
+### 🔑 Keywords:
+
+### **Ethnic Composition**
+
+👉 Different cultural groups
+
+* 59% Dutch-speaking
+* 40% French-speaking
+* 1% German-speaking
+
+---
+
+### **Accommodation**
+
+👉 Adjusting and sharing power
+
+---
+
+### **Community Government**
+
+👉 Government elected by linguistic groups
+
+* Deals with:
+
+  * culture
+  * education
+  * language
+
+---
+
+### 🧠 Exam Line:
+
+> Belgium avoided conflict through **accommodation** and **power sharing** among different **ethnic groups**, including a **community government**.
+
+---
+
+## 🇱🇰 Sri Lanka (Failure Example)
+
+### 🔑 Keywords:
+
+### **Majoritarianism**
+
+👉 Rule by majority ignoring minorities
+
+---
+
+### **Sinhala Only Act (1956)**
+
+👉 Made Sinhala the official language
+
+---
+
+### **Discrimination**
+
+👉 Unfair treatment of minorities
+
+---
+
+### 🧠 Exam Line:
+
+> Sri Lanka followed **majoritarianism**, which led to **discrimination** against Tamils and resulted in conflict.
+
+---
+
+# 🔵 3) Why Power Sharing is Important
+
+---
+
+## 🔑 Two Key Reasons
+
+---
+
+### 1️⃣ Prudential Reason (Practical)
+
+👉 Reduces conflict
+👉 Maintains stability
+
+---
+
+### 2️⃣ Moral Reason (Ethical)
+
+👉 Power sharing is **right in democracy**
+👉 Everyone should have a say
+
+---
+
+### 🧠 Exam Line:
+
+> Power sharing is important due to both **prudential reasons** (reducing conflict) and **moral reasons** (ensuring equality).
+
+---
+
+# 🔴 4) Forms of Power Sharing
+
+---
+
+## 🟢 1) Horizontal Distribution
+
+### 🔑 Keyword:
+
+### **Horizontal Power Sharing**
+
+👉 Power shared among same-level organs
+
+* Legislature
+* Executive
+* Judiciary
+
+---
+
+### **Checks and Balances**
+
+👉 Each organ controls the other
+
+---
+
+### 🧠 Exam Line:
+
+> In horizontal power sharing, power is distributed among different organs with **checks and balances**.
+
+---
+
+---
+
+## 🟡 2) Vertical Distribution
+
+### 🔑 Keyword:
+
+### **Federal System**
+
+👉 Power divided between:
+
+* Central government
+* State government
+
+---
+
+### 🧠 Exam Line:
+
+> Vertical power sharing occurs in a **federal system** where power is divided between central and state governments.
+
+---
+
+---
+
+## 🔵 3) Power Sharing Among Social Groups
+
+### 🔑 Keywords:
+
+### **Minority Groups**
+
+👉 Smaller or less powerful groups
+
+### **Reserved Constituencies**
+
+👉 Seats reserved for certain groups
+
+---
+
+### 🧠 Exam Line:
+
+> Power is shared among social groups through mechanisms like **reserved constituencies**.
+
+---
+
+---
+
+## 🟣 4) Power Sharing Among Political Parties
+
+### 🔑 Keywords:
+
+### **Coalition Government**
+
+👉 Multiple parties share power
+
+---
+
+### **Pressure Groups**
+
+👉 Influence government decisions
+
+---
+
+### 🧠 Exam Line:
+
+> Power is shared among political parties through **coalition governments** and influenced by **pressure groups**.
+
+---
+
+# ⚙️ 5) Key Comparison (Important for Exams)
+
+---
+
+## Belgium vs Sri Lanka
+
+```text
+Belgium → Power Sharing → Peace
+Sri Lanka → Majoritarianism → Conflict
+```
+
+---
+
+# 🧠 6) How to Answer Any Question
+
+---
+
+## 🎯 Golden Rule:
+
+```text
+Keyword + Explanation + Example
+```
+
+---
+
+## Example Question:
+
+**Q: Why is power sharing important?**
+
+---
+
+### ✅ Answer:
+
+* Ensures stability (**prudential reason**)
+* Promotes equality (**moral reason**)
+* Reduces conflict (Belgium example)
+* Avoids discrimination (Sri Lanka example)
+
+---
+
+# ⚠️ Common Mistakes
+
+❌ Writing only story (Belgium/Sri Lanka)
+❌ Not using keywords like:
+
+* prudential
+* moral
+* majoritarianism
+
+---
+
+# 🎯 Final Insight
+
+> Power sharing is not just about dividing power—it is about **managing diversity in a democracy**
+
+---
+
+# 🧠 One-line takeaway
+
+👉 If you remember:
+
+* **Forms of power sharing**
+* **Belgium vs Sri Lanka**
+* **Keywords (prudential, moral, majoritarianism)**
+
+➡️ You can answer almost any question from this chapter.
