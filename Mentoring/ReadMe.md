@@ -486,19 +486,7 @@ Do not rush toward “AI Agents.”
 Strong systems are built on:
 
 ```text
-Engineering Fundamentals
-→ Data Systems Understanding
-→ AI Foundations
-→ Reliable AI Architectures
-```
-
-NOT:
-
-```text
-ChatGPT
-→ LangChain
-→ Agents
-→ Confusion
+Engineering Fundamentals → Data Systems Understanding → AI Foundations → Reliable AI Architectures
 ```
 
 The goal is not just learning tools.
