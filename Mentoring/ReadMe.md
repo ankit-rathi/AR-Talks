@@ -7,18 +7,14 @@ This repository is designed to help Data Analysts progressively evolve into:
 * Strong Python practitioners
 * Data Engineers
 * AI-aware engineers
-* Future-ready AI/Data Reliability Engineers
+* Future-ready Data/AI Engineers
 
 This is NOT a shortcut roadmap for becoming “AI Prompt Users.”
 
 The objective is to build:
 
 ```text
-Programming Fluency
-→ Engineering Thinking
-→ System Understanding
-→ AI Foundations
-→ Production-Grade AI System Capability
+Programming Fluency → Engineering Thinking → System Understanding → AI Foundations → AI System Capability
 ```
 
 ---
@@ -39,16 +35,6 @@ However, many people are trying to jump directly into:
 * CrewAI,
 * AutoGen,
 * or “AI Agents”
-
-without understanding:
-
-* programming,
-* systems,
-* architecture,
-* workflows,
-* data engineering,
-* reliability,
-* or software fundamentals.
 
 That creates:
 
