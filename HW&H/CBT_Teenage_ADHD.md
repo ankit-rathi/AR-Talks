@@ -1,3 +1,21 @@
+## For Kid
+
+| Situation                               | Action (What You Should Do)                                                | Consequence                                                           |
+| --------------------------------------- | -------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| Mocking / Making Faces / Provoking      | Pause → Reset → Continue calmly or take a 5-minute cool-down               | Continued behavior = reduced screen/cricket time                      |
+| Feeling Angry or Overstimulated         | Use balcony / short walk / quiet reset instead of shouting or running away | Running outside after conflict = no cricket/free time that day        |
+| Teasing Little Sister                   | Stop → Hands to yourself → Take reset break if needed                      | Repeated teasing = loss of next reward                                |
+| Study Time Starts                       | Complete one study block at a time (25–40 min)                             | Not completing study block = reduced cricket/screen time              |
+| Distracted During Study                 | Pause → Drink water / short reset → Restart smaller task                   | Continued distraction = study block ends early                        |
+| Going Outside / Public Places           | Use “Silent Body Mode” (normal face, calm hands, no muttering)             | Repeated public behavior = shorter outing / reduced freedom next time |
+| Feeling Like Abusing or Making Gestures | Pause → Deep breath → Stay quiet or write it down                          | Continued behavior = reduced privileges                               |
+| During Arguments                        | Speak calmly or take a reset break                                         | Escalation = discussion stops until calm                              |
+| Completing Tasks Calmly                 | Finish work first, then enjoy cricket/free time                            | Rewards earned through consistency                                    |
+| Regaining Control After Mistake         | Say sorry, reset, and continue normally                                    | Faster recovery = trust and more freedom                              |
+
+
+## For Parents
+
 | Situation                               | What NOT to Do                                           | CBT Script (What to Say)                                                                                    | Parent Action                                     | Consequence (Calm & Predictable)                                 | Goal Being Trained          |
 | --------------------------------------- | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------- | ---------------------------------------------------------------- | --------------------------- |
 | **Mocking / Making Faces / Provoking**  | Don’t shout, insult, argue, or react emotionally         | “You’re overstimulated right now.” → “Pause.” → “You can reset and continue, or take a 5-minute cool-down.” | Stay calm, low voice, minimal words               | Continued mocking = reduced screen/cricket time                  | Pause before impulse        |
