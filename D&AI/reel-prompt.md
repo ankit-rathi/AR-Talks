@@ -58,7 +58,7 @@ Use this storytelling structure:
 
 Important Rules:
 - Keep it around 60 seconds when spoken naturally.
-- Use short punchy sentences.
+- Use medium length simple sentences.
 - Avoid jargon overload.
 - Avoid definitions like a textbook.
 - Make every line visually imaginable.
@@ -77,11 +77,10 @@ Also provide:
 1. Reel Title
 2. Thumbnail Hook Text
 3. One-line Reel Description
-4. Suggested Visual Flow (scene-by-scene)
-5. Final Mic-Drop Line
 
 The reel should prioritize:
 Curiosity → Clarity → Insight → Retention
 
 Do not use headings inside the transcript itself.
 The transcript should flow naturally like a real short-form narration.
+
