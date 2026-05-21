@@ -1,7 +1,6 @@
-```text
 I want you to act as a systems storyteller and generate a highly engaging 60-second short-form reel transcript for the following Data & AI topic.
 
-TOPIC: [INSERT TOPIC]
+TOPIC: How ChatGPT Actually Works
 
 The objective is to explain the concept in:
 - very simple English,
@@ -9,7 +8,8 @@ The objective is to explain the concept in:
 - visually imaginative way,
 - emotionally engaging manner,
 - suitable for Instagram Reels / YouTube Shorts,
-- optimized for young generation attention span.
+- optimized for young generation attention span
+- strictly concluding under 60 seconds.
 
 The reel should feel like:
 - an “aha moment,”
@@ -99,4 +99,4 @@ Also provide:
 
 Do not use headings inside the transcript itself.
 The transcript should flow naturally like a real short-form narration someone can directly speak in a reel.
-```
+
