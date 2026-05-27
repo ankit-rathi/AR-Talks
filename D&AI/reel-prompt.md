@@ -1,6 +1,12 @@
 I want you to act as a systems storyteller and generate a 60-second reel transcript for the following Data & AI topic.
 
-TOPIC: [INSERT TOPIC]
+TOPIC: 
+| ARC   | Topic                                | Owns This Question                                       | Depends On               | Unlocks                 |
+
+| ----- | ------------------------------------ | -------------------------------------------------------- | ------------------------ | ----------------------- |
+
+| ARC 0 | Why AI Suddenly Exploded | Why did AI become mainstream recently? | Compute + data growth | Modern AI ecosystem |
+
 
 The goal is to explain the concept in very simple English using intuitive storytelling and everyday examples.
 
@@ -21,7 +27,7 @@ Keep the narration natural for an Indian speaker.
 Use short and simple sentences.
 Make it feel conversational and easy to speak aloud.
 
-Do NOT:
+Do NOT: 
 
 * sound academic,
 * sound corporate,
