@@ -20,7 +20,7 @@ and end with
 
 | KG   | Topic                     | Problem Statement             | Conclusion We Must Reach                                              | Leads To                  |
 | ---- | ------------------------- | ----------------------------- | --------------------------------------------------------------------- | ------------------------- |
-| KG01 | Reality & Uncertainty     | Why do decisions exist?       | Intelligence exists because reality is uncertain.                     | Information               |
+| KG01 | Reality & Uncertainty     | Why do decisions exist?       | Decision exists because reality is uncertain.                         | Information               |
 | KG02 | Information               | Why is information valuable?  | Information reduces uncertainty and creates advantage.                | Intelligence Loop         |
 | KG03 | Intelligence Loop         | How does intelligence emerge? | Intelligence emerges through feedback between observation and action. | Learning Organizations    |
 | KG04 | Learning Organizations    | How do organizations improve? | Faster learning creates better organizations.                         | Evolution of Intelligence |
