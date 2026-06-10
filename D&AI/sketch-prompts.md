@@ -21,18 +21,3 @@ date: 2026-06-08
     style="width:100%; max-width:1200px; height:auto; border-radius:8px;"
   />
 </p>
-
-<p>
-  <a href="/sketch-intelligence/" class="home-button">
-    ← Back to Sketch Intelligence
-  </a>
-</p>
-
-## Related Concepts
-
-- RAG
-- Tools
-- Memory
-  
-
-Based on above md format, can you generate the similar metadata for the sketch note you just produced?
