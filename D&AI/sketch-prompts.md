@@ -16,8 +16,10 @@ date: 2026-06-08
 
 <p align="center">
   <img 
-    src="https://github.com/user-attachments/assets/2f03e005-d636-4436-a427-7798cf05408e"
+    src="https://github.com/user-attachments/assets/XXXXXXX-XXXXX-XXXX-XXXX-XXXXXXXXX"
     alt="AI Agents"
     style="width:100%; max-width:1200px; height:auto; border-radius:8px;"
   />
 </p>
+
+Based on above md format, can you generate the similar metadata for the sketch note you just produced?
