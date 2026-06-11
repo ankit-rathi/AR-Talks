@@ -1,5 +1,5 @@
 ### 1
-Based on submitted sketch notes on various topics and generated sketches by you till now, and above response, can you generate a textual sketch note on 'AI Memory'?
+Based on submitted sketch notes on various topics and generated sketches by you till now, and above response, can you generate a textual sketch note on 'MCP'? Keep it clear and crisp
 Pattern: Everyday Observation → Hidden Problem → Simple Idea → How It Works → Why It Matters → Big Insight → Next Topic
 
 ### 2
