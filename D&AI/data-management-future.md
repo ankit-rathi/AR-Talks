@@ -1,81 +1,105 @@
-Since the intellectual structure has now stabilized, I would organize the deck around **13 slides**, where each slide answers one question and naturally creates the need for the next slide. The audience should feel like they are following one argument rather than listening to thirteen independent observations.
+Based on everything that has emerged through the entire discussion, the real objective is:
+
+> **Elevate Data Quality from a control activity into a strategic capability within the future evolution of Data Management.**
+
+Everything else should support that objective.
 
 ---
 
-# Title
+# Title Slide
 
-# **Beyond Data Management**
+## The Future of Data Management
 
-### *Context, Trust and Reliable Decisions in the Age of Abundant Intelligence*
-
----
-
-# PART I — THE SHIFT
+### Context, Quality and Trust in the Age of Abundant Intelligence
 
 ---
 
-## Slide 1 — The Shift
+# PART I — WHY DATA MANAGEMENT MUST EVOLVE
+
+---
+
+# Slide 1 — The New Bottleneck
 
 ### Purpose
 
-Establish why this conversation matters now.
+Establish why this conversation matters.
 
 ### Question
 
-If intelligence is becoming abundant, why aren't decisions becoming easier?
+Why doesn't more AI automatically create better decisions?
 
 ### Visual
 
 ```
 Industrial Age
 Efficiency
-        ↓
+      ↓
+
 Information Age
 Data
-        ↓
+      ↓
+
 AI Age
 Trust
 ```
 
+Alongside:
+
+```
+More Intelligence ↑
+
+More Decisions
+≠
+More Confidence
+```
+
 ### Key Message
 
-> More intelligence does not automatically create better decisions. The bottleneck has shifted.
+As intelligence becomes abundant, ambiguity becomes expensive.
 
 ---
 
-## Slide 2 — The New Mission
+# Slide 2 — The New Mission of Data Management
 
 ### Purpose
 
-Introduce the central spine of the deck.
+Introduce the narrative spine.
 
 ### Question
 
-If data alone is insufficient, what must data management provide?
+What does modern data management ultimately enable?
 
 ### Visual
 
 ```
-Manage Data
-      ↓
-Provide Context
-      ↓
-Build Trust
-      ↓
-Enable Reliable Decisions
+Data
+   ↓
+Context
+   ↓
+Quality
+   ↓
+Confidence
+   ↓
+Trust
+   ↓
+Reliable Decisions
+   ↓
+Learning Enterprise
 ```
 
 ### Key Message
 
-> Data management is evolving from managing information to enabling reliable decisions.
+Data management is no longer about moving data.
+
+Its purpose is enabling reliable decisions.
 
 ---
 
-# PART II — WHY AI CHANGES EVERYTHING
+# PART II — AI EXPOSES WHAT ORGANIZATIONS ALREADY KNOW
 
 ---
 
-## Slide 3 — AI Is an Auditor
+# Slide 3 — AI Is an Auditor
 
 ### Purpose
 
@@ -83,7 +107,7 @@ Reframe AI.
 
 ### Question
 
-Why do AI initiatives expose so many hidden problems?
+Why do AI projects expose so many problems?
 
 ### Visual
 
@@ -91,423 +115,516 @@ Why do AI initiatives expose so many hidden problems?
 Humans
 (absorb ambiguity)
         ↓
-AI
-(removes the buffer)
+
+AI removes buffer
         ↓
-Hidden inconsistencies
-become visible
+
+Hidden inconsistencies become visible
 ```
 
 ### Key Message
 
-> AI does not create ambiguity. It exposes ambiguity.
+AI does not create ambiguity.
+
+It exposes it.
 
 ---
 
-## Slide 4 — The Active Customer Example
+# Slide 4 — Our "Active Customer" Problem
+
+*(Replace with your organization's equivalent)*
 
 ### Purpose
 
-Make the problem tangible.
+Make the problem real.
 
 ### Question
 
-What does organizational ambiguity look like in practice?
+What does ambiguity look like in practice?
 
 ### Visual
 
 ```
 Sales
-Active = 30 days
+30 days
 
 Finance
-Active = 90 days
+90 days
 
 Operations
-Active = Current subscriber
-
-        ↓
-
-AI Agent
-
-        ↓
-
-Confident answer
-
-        ↓
-
-Wrong enterprise decision
+Currently subscribed
 ```
 
-### Closing Line
+AI asks:
+
+"How many active customers do we have?"
+
+Three answers.
+
+One confident mistake.
+
+Bottom line:
 
 > Technology exposes tensions. Leadership resolves them.
 
 ### Key Message
 
-> Most data problems are organizational problems wearing technical clothes.
+Most technical problems are organizational problems wearing technical clothes.
 
 ---
 
-# PART III — CONTEXT
+# PART III — CONTEXT CREATES MEANING
 
 ---
 
-## Slide 5 — Why Context Becomes Strategic
+# Slide 5 — Why Context Matters
 
 ### Purpose
 
-Explain why metadata becomes strategic.
+Connect metadata with business meaning.
 
 ### Question
 
-Why is data alone no longer enough?
+Why is metadata becoming strategic?
 
 ### Visual
 
 ```
 Data
-What happened
+answers:
 
-+
+What happened?
 
 Context
-What it means
+answers:
 
-↓
-
-Reliable understanding
+What does it mean?
 ```
 
-### Key Message
-
-> Intelligence without context is prediction without understanding.
-
----
-
-# PART IV — DECISION QUALITY AND TRUST
-
----
-
-## Slide 6 — From Data Quality to Decision Quality
-
-### Purpose
-
-Modernize the notion of quality.
-
-### Question
-
-What does quality mean in the AI era?
-
-### Visual
-
-| Yesterday            | Tomorrow                 |
-| -------------------- | ------------------------ |
-| Is the data correct? | Can we safely act on it? |
-| Rule checks          | Confidence               |
-| Static               | Context aware            |
-| Binary               | Probabilistic            |
-| Detection            | Learning                 |
-
-### Key Message
-
-> Quality is no longer about data correctness. It is about decision confidence.
-
----
-
-## Slide 7 — How Trust Emerges
-
-### Purpose
-
-Define trust.
-
-### Question
-
-What makes humans willing to rely on intelligent systems?
-
-### Visual
+Expanded:
 
 ```
+Ownership
 Meaning
-+
-Authority
-+
-Accountability
-+
-Observability
-+
-Recoverability
+Policies
+Lineage
+Relationships
+```
+
+### Key Message
+
+Without context, intelligence becomes unreliable.
+
+---
+
+# PART IV — DATA QUALITY EVOLVES
+
+---
+
+# Slide 6 — From Data Quality to Decision Quality
+
+### Purpose
+
+Hero slide.
+
+### Question
+
+What is changing in data quality?
+
+### Visual
+
+| Yesterday     | Tomorrow         |
+| ------------- | ---------------- |
+| Rule-based    | Confidence-based |
+| Pass/fail     | Probabilistic    |
+| Static checks | Context-aware    |
+| Exceptions    | Human oversight  |
+| Monitoring    | Learning loops   |
+
+Bottom:
+
+```
+Old Question
+
+Is the data correct?
 
 ↓
+
+New Question
+
+Can humans and AI safely act on it?
+```
+
+### Key Message
+
+Data quality is evolving from correctness toward decision fitness.
+
+---
+
+# Slide 7 — How Quality Creates Confidence
+
+### Purpose
+
+Show mechanism.
+
+### Question
+
+How does context become trust?
+
+### Visual
+
+```
+Context
+      ↓
+
+Quality
+(rules + confidence + learning)
+      ↓
+
+Confidence
+      ↓
 
 Trust
 ```
 
-### Bottom Message
+Small example:
 
-> Trustworthy systems are not systems that never fail. They are systems whose failures are detectable, explainable and recoverable.
+```
+Human overrides AI
+        ↓
+
+Feedback captured
+        ↓
+
+Confidence adjusted
+        ↓
+
+Future decisions improve
+```
+
+### Key Message
+
+Quality is the bridge between meaning and trust.
 
 ---
 
-# PART V — CAPABILITY AND DELEGATION
-
----
-
-## Slide 8 — Capability Without Coherence
+# Slide 8 — How Trust Emerges
 
 ### Purpose
 
-Introduce the central idea of the deck.
+Explain trust.
 
 ### Question
 
-Why do capable organizations still fail?
+What makes systems trustworthy?
 
 ### Visual
 
-### Capability × Coherence Matrix
+Five pillars:
 
-|                | Low Capability             | High Capability           |
-| -------------- | -------------------------- | ------------------------- |
-| High Coherence | Purposeful but constrained | Learning Enterprise       |
-| Low Coherence  | Bureaucracy                | Sophisticated Incoherence |
+```
+Meaning
 
-### Example
+Authority
+
+Accountability
+
+Observability
+
+Recoverability
+```
+
+Bottom:
+
+> Trustworthy systems are not systems that never fail.
+
+> They are systems whose failures are visible, explainable and recoverable.
+
+### Key Message
+
+Trust is earned, not installed.
+
+---
+
+# PART V — SCALING INTELLIGENCE
+
+---
+
+# Slide 9 — Capability Without Coherence
+
+### Purpose
+
+Intellectual centerpiece.
+
+### Question
+
+Why do smart organizations still fail?
+
+### Visual
+
+Capability × Coherence matrix.
+
+Highlight:
+
+### Sophisticated Incoherence
+
+```
+Fast
+Smart
+Automated
+
+But misaligned
+```
+
+Example:
 
 ```
 Sales AI
+
 Finance AI
+
 Operations AI
 
 ↓
 
 Locally optimized
 
-↓
-
 Globally contradictory
 ```
 
 ### Key Message
 
-> Organizations can become faster and smarter, but not necessarily wiser.
+Organizations become faster and smarter.
+
+Not necessarily wiser.
+
+(Pause here.)
+
+Ask:
+
+> Where do we think we currently sit?
 
 ---
 
-## Slide 9 — Delegation Requires Accountability
+# Slide 10 — Delegation Requires Accountability
 
 ### Purpose
 
-Introduce governance.
+Governance.
 
 ### Question
 
-How far should automation go?
+What should AI actually own?
 
 ### Visual
 
 ```
 Human Judgment
-        ↓
-Decision Support
-        ↓
-Automation
-        ↓
-Agents
+      ↓
 
-Higher autonomy
-requires higher trust
+Decision Support
+      ↓
+
+Automation
+      ↓
+
+Agents
 ```
 
-### Bottom Message
+Across bottom:
 
-> Capability determines what can be automated. Accountability determines what should be automated.
+```
+Capability determines
+what can be automated.
 
----
-
-# PART VI — THE ANSWER
-
----
-
-## Slide 10 — The New Mission of Data Management
-
-### Purpose
-
-Reposition the function.
-
-### Question
-
-What does data management become?
-
-### Visual
-
-### Yesterday
-
-* Pipelines
-* Storage
-* Dashboards
-
-↓
-
-### Tomorrow
-
-* Context
-* Confidence
-* Governance
-* Reliable decisions
+Accountability determines
+what should be automated.
+```
 
 ### Key Message
 
-> The future of data management is meaning management.
+The question is not:
+
+"What can AI do?"
+
+The question is:
+
+"Who is responsible when it is wrong?"
 
 ---
 
-## Slide 11 — From Stacks to Learning Loops
+# PART VI — THE FUTURE OF DATA MANAGEMENT
+
+---
+
+# Slide 11 — From Data Management to Meaning Management
 
 ### Purpose
 
-Show what differentiates learning organizations.
+Elevate the function.
 
 ### Question
 
-Where does sustainable advantage come from?
+What is the mission of modern data management?
+
+### Visual
+
+Old:
+
+```
+Store data
+
+Build pipelines
+
+Produce reports
+```
+
+New:
+
+```
+Provide context
+
+Create confidence
+
+Enable trust
+
+Support decisions
+```
+
+Three pillars:
+
+```
+Context
+(Data Management)
+
+Quality
+(Data Quality)
+
+Trust
+(Business)
+```
+
+### Key Message
+
+Data management becomes the foundation for reliable decisions.
+
+---
+
+# Slide 12 — The Learning Loop
+
+### Purpose
+
+Show architecture without overwhelming.
+
+### Question
+
+What are we really building?
 
 ### Visual
 
 ```
-Decisions
-      ↓
-Outcomes
-      ↓
-Learning
-      ↓
 Context
       ↓
-Better Decisions
+
+Quality
+      ↓
+
+Confidence
+      ↓
+
+Trust
+      ↓
+
+Decisions
+      ↓
+
+Outcomes
+      ↓
+
+Learning
+      ↓
+
+Better Context
 ```
 
-### Annotation
+Observation:
 
-> Most organizations have built the top half of this cycle. Far fewer have built the bottom half.
+> Most organizations have invested in execution.
+
+> Far fewer have invested in learning.
 
 ### Key Message
 
-> The loop matters as much as the stack.
+The loop matters more than the stack.
 
 ---
 
-## Slide 12 — The Real Scarcity
+# Slide 13 — Where Do We Start?
 
 ### Purpose
 
-Reveal the deeper thesis.
+Practical call to action.
 
 ### Question
 
-What ultimately creates competitive advantage?
-
-### Visual
-
-```
-Context becomes strategic.
-
-        ↓
-
-Trust becomes essential.
-
-        ↓
-
-Coherence becomes scarce.
-```
-
----
-
-### Closing Statement
-
-```
-Scale intelligence
-without losing alignment.
-
-Move faster
-without becoming fragmented.
-
-Automate
-without losing accountability.
-```
-
-### Key Message
-
-> Scarcity creates advantage.
-
----
-
-# PART VII — WHAT THIS MEANS FOR US
-
----
-
-## Slide 13 — Start Small, Learn Fast
-
-### Purpose
-
-Convert philosophy into action.
-
-### Question
-
-Where do we begin?
+How do we begin?
 
 ### Visual
 
 ```
 Identify
-conflicting definitions
 
-        ↓
+Align
 
-Establish ownership
+Formalize
 
-        ↓
+Learn
 
-Create shared context
-
-        ↓
-
-Build trust
-
-        ↓
-
-Scale gradually
+Scale
 ```
 
-### Example
+Three concrete actions:
 
-```
-Active Customer
-Revenue
-Product Availability
-```
+### Identify
 
-### Key Message
+Top 3 conflicting business definitions.
 
-> Resolve meaning before scaling intelligence.
+### Formalize
+
+Shared meaning and ownership.
+
+### Pilot
+
+Confidence-based quality on one critical use case.
 
 ---
 
-# Closing (No Slide)
+## Closing Message
 
-> This presentation began as a conversation about data management.
->
-> It ends as a conversation about how organizations preserve reliable judgment in a world where intelligence is abundant.
->
-> Data management is no longer just about data.
->
-> It is about preserving shared meaning, trusted context, and accountable decisions in a world where intelligence is abundant.
+```
+Context becomes strategic.
+
+Quality becomes essential.
+
+Trust becomes scarce.
+
+Competitive advantage belongs to organizations that can scale intelligence without losing coherence.
+```
 
 ---
 
-I think this is the most mature structure because the deck operates simultaneously at three levels:
+# My strongest recommendation
 
-* **Surface level:** Context → Trust → Reliable Decisions.
-* **Structural level:** Data management evolves into meaning management.
-* **Deep level (hidden):** Organizations ultimately compete on their ability to maintain coherence while scaling intelligence.
+**Do not present this as a grand theory.**
 
-The audience only needs the first level. The presenter understands all three. That asymmetry is what gives the deck both clarity and depth.
+Present it as:
+
+> "How Data Quality evolves from a control function into a strategic capability that helps Data Management enable trusted decisions in the age of AI."
+
+That story is much more aligned with:
+
+* your boss's interests,
+* your Head of Data Management's agenda,
+* and your own opportunity to establish thought leadership.
+
+Underneath this deck sits a much deeper institutional theory, but I would keep 90% of that below the waterline. The audience should feel the depth, not have to swim through it.
