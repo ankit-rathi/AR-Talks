@@ -1,368 +1,246 @@
-You have enough information now to stop treating this as a people problem and start treating it as a **portfolio allocation and incentives problem**.
+I would suggest you keep one consistent narrative across the team and then customise the emphasis in 1:1s. The biggest mistake would be giving different messages to different people that later get compared. The **core story should be the same**:
 
-The core issue is actually very simple:
+> "The team has been valuable and reliable. The next phase is about evolving from a support function that delivers requested work into a proactive data management capability that creates visible business impact. I will create the structure and opportunities; each person needs to take ownership of their growth."
 
-> Your team wants delivery-team rewards while operating with support-team behaviors.
-
-That statement sounds harsh, but based on your inputs it is objectively true.
-
-The delivery team:
-
-* Builds strategic capabilities.
-* Works on newer technology.
-* Carries delivery pressure.
-* Creates visible business outcomes.
-* Builds organizational capital.
-
-Your team:
-
-* Executes incoming work.
-* Optimizes for stability.
-* Works collectively with diffused ownership.
-* Does not automate.
-* Does not proactively create capacity.
-* Rarely contributes to strategic work.
-
-These two operating models naturally receive different organizational rewards.
-
-Your manager understands this and is effectively saying:
-
-> "The ladder exists. Use your spare capacity to climb it."
+Below is the narrative I would use.
 
 ---
 
-# Your role as a leader
+# Team Meeting Narrative (30 minutes)
 
-You have three responsibilities:
+## 1. Start with appreciation and context
 
-## 1. Advocate fairly.
+> "Before I talk about changes, I want to acknowledge what this team has achieved. LDQ is a critical product, and maintaining stability while handling regular business requests is not easy. The team's experience, especially the deep product knowledge and ability to resolve issues, has kept things running effectively."
 
-## 2. Create opportunities.
+Pause here.
 
-## 3. Refuse to distort reality.
-
-Many managers fail because they become one of two extremes:
-
-### Type A: Corporate shield
-
-> "My team deserves better. Leadership is unfair."
-
-This wins popularity and loses credibility.
+> "At the same time, as we move forward, the expectations from teams are evolving. We are not only measured on keeping things stable; we are also expected to improve how we work, create efficiencies, reduce dependency on individuals and contribute towards strategic priorities like ADQ."
 
 ---
 
-### Type B: Management proxy
+# 2. Explain why the operating model is changing
 
-> "Leadership says work harder."
+> "I want to be transparent that I have had discussions with leadership about how we can make this team more effective and create better growth opportunities for everyone."
 
-This wins compliance and loses trust.
+Avoid:
+
+* "Leadership is unhappy."
+* "My manager asked me to do this."
+
+Continue:
+
+> "One observation is that our current way of working has served us well, but it has some limitations. A lot of knowledge and coordination sits with a few people, ownership is not always visible, and it becomes difficult to showcase individual contributions."
 
 ---
 
-You need to become:
+# 3. Address LDQ vs ADQ comparison carefully
 
-### Type C: Market maker.
+This is the sensitive part.
 
-Your job becomes:
+> "We should also acknowledge that there is a difference between LDQ and ADQ teams in terms of operating model, efficiency and visibility. This is not about saying one team is better than another. The teams are at different stages and have different responsibilities."
 
-> "Here is how rewards are created in this organization.
+Then:
+
+> "ADQ has naturally created more visibility because it is a newer strategic product, but some of the behaviours that create that visibility are things we can adopt in LDQ as well — stronger ownership, automation, proactive improvement and clearer business impact."
+
+---
+
+# 4. Explain the new expectations
+
+> "The goal is not to add unnecessary process. The goal is to make sure:
 >
-> Here are the opportunities available.
->
-> Here is the evidence required.
->
-> I will advocate aggressively if evidence exists."
+> * everyone knows what they own,
+> * everyone's contribution is visible,
+> * dependencies are clear,
+> * we create capacity for improvements and ADQ contribution."
 
-That is honest, empathetic and politically safe.
+Then introduce:
 
----
+### CR ownership
 
-# First problem: Invisible work
-
-This is your biggest operational issue.
-
-> They work collectively and MB knows everything.
-
-This creates three problems:
-
-## Problem 1
-
-You cannot evaluate contribution.
-
-## Problem 2
-
-Leadership cannot evaluate contribution.
-
-## Problem 3
-
-MB accidentally becomes a bottleneck.
-
-If MB leaves tomorrow:
-
-* operational risk increases,
-* TD stalls,
-* AM struggles,
-* you get dragged back into operations.
-
-This is unacceptable organizational design.
+> "Going forward, every CR will have a clear owner. Ownership does not mean working alone; it means someone drives it end-to-end — understanding requirements, coordinating, progressing, communicating and ensuring closure."
 
 ---
 
-# New operating model
+### Jira transparency
 
-Every CR gets:
-
-| Role        | Owner      |
-| ----------- | ---------- |
-| Lead owner  | One person |
-| Reviewer    | MB or you  |
-| Contributor | Optional   |
-
-Example:
-
-| CR  | Owner | Reviewer |
-| --- | ----- | -------- |
-| CR1 | TD    | MB       |
-| CR2 | AG    | MB       |
-| CR3 | AM    | MB       |
-| CR4 | MB    | You      |
-
-Ownership means:
-
-* requirements clarification,
-* impact assessment,
-* implementation,
-* testing,
-* stakeholder communication,
-* closure documentation.
-
-The owner presents status.
-
-Not MB.
+> "We will use Jira as our single source of truth. This is not a monitoring mechanism. It is a way to ensure transparency and recognition of everyone's work."
 
 ---
 
-# Second problem: No investment budget
+### Sprint rhythm
 
-Currently:
+> "We will move towards a lightweight two-week sprint cycle. This will help us balance BAU, CR delivery, improvements and ADQ-related activities."
 
-```text
-100% BAU
-0% future
-```
+---
 
-This always creates resentment.
+### Stand-up
 
-You need:
+> "The daily stand-up is not a status interrogation. It is a quick way to remove blockers and keep everyone aligned."
 
-```text
-80% BAU
-20% capability building
-```
+---
+
+# 5. Address career growth directly
+
+I would definitely include this.
+
+> "I also want to talk about career growth because I know this is important for everyone."
+
+> "Growth, promotions, bonuses and increments are influenced by multiple factors. Delivery is important, but so are ownership, complexity handled, stakeholder impact, improvement mindset and contribution beyond routine execution."
+
+Then:
+
+> "My responsibility is to create opportunities, provide support and make sure contributions are visible. Everyone's responsibility is to step forward and demonstrate impact."
+
+---
+
+# 6. Close the team meeting
+
+> "My objective is not to control the team more. My objective is to create an environment where strong contributors can grow, where knowledge is shared, and where the team gets recognised for the value it creates."
+
+---
+
+# Individual 1:1 Narratives
+
+---
+
+# MB (Most important)
+
+## Objective:
+
+Convert him from "hero operator" into "senior multiplier."
+
+Start:
+
+> "I want to start by acknowledging that you have been playing a very important role in the team. The squad depends heavily on your experience, product knowledge and ability to coordinate."
+
+Then:
+
+> "As we evolve the operating model, I want to take more ownership of squad coordination, stakeholder alignment and sprint management. This is not because your contribution is reduced; actually, I want to use your experience differently."
+
+The key message:
+
+> "The next level for you is not just delivering work. It is creating capability around you — helping others become independent, improving processes and reducing dependency on individuals."
+
+Ask:
+
+> "What are the areas where you think we can improve as a team?"
+
+Give him a role:
+
+> "I would like you to be a technical anchor and mentor for the team."
+
+---
+
+# AG
+
+## Objective:
+
+Acknowledge promotion + create differentiated impact.
+
+Start:
+
+> "I know your recent promotion alignment was recognition of your contribution, and I also understand that financial recognition remains important."
+
+Then:
+
+> "For me, the next step is making sure your impact is visible and differentiated. Strong cases during calibration are built through a combination of delivery, ownership, complexity and broader contribution."
+
+Expectations:
+
+> "I would like you to take more end-to-end ownership of areas rather than only contributing to tasks."
 
 Examples:
 
-### LDQ automation
-
-* recurring reports
-* onboarding documentation
-* deployment activities
-* support runbooks
-* health checks
-* data validation
-
-Every hour saved becomes ADQ investment capital.
-
-Your manager is already explicitly asking for this.
-
----
-
-# Third problem: Promotion evidence
-
-You need transparent criteria.
-
-## MB Promotion Criteria
-
-Examples:
-
-### Already doing:
-
-* coordination
-* review
-* stakeholder management
-
-### Missing:
-
-* process improvement
-* automation
-* capability uplift
-* succession planning
-
-Question for MB:
-
-> If promoted tomorrow, what changes in organizational outcomes because of your promotion?
-
-That answer should exist.
-
----
-
-## TD Promotion Path
-
-TD is your growth candidate.
-
-Current state:
-
-```text
-Capability > Confidence
-```
-
-Target:
-
-```text
-Capability + Ownership
-```
-
-Give TD:
-
-* independent CR ownership,
-* stakeholder exposure,
-* ADQ onboarding tasks,
-* presentation opportunities.
-
-This person may grow rapidly.
-
----
-
-## AG Path
-
-AG recently promoted.
-
-The conversation is straightforward:
-
-> Promotions are unlikely immediately after recent promotion.
->
-> Compensation discussions are easier to justify through consistent delivery and broader contribution.
-
-No issue here.
-
----
-
-## AM Path
-
-AM requires reality, not motivation speeches.
+* Own medium complexity CRs.
+* Lead stakeholder conversations.
+* Take ownership of one improvement area.
+* Contribute to ADQ adoption.
 
 Message:
 
-> Expectations for current grade are independent ownership, initiative and willingness to tackle difficult work.
->
-> This is the minimum bar, not promotion behavior.
-
-Document examples.
-
-Avoid surprises later.
+> "The aim is not just doing more work; it is creating more visible impact."
 
 ---
 
-# Fourth problem: Team narrative
+# TD
 
-Your team currently believes:
+## Objective:
 
-> Delivery team gets opportunities.
+Convert potential into confidence.
 
-Reality:
+Start:
 
-> Delivery team captured opportunities.
+> "One thing I appreciate about you is your learning mindset and technical capability. I see good potential."
 
-Those are different statements.
+Then:
 
-Your manager already confirmed this by allowing contribution into ADQ.
+> "The next growth area is confidence and independent ownership. Capability is there; now we need to create evidence through experience."
 
-Your response should become:
+Actions:
 
-> I agree delivery work gets more visibility.
->
-> That is exactly why we need to deliberately create exposure there.
->
-> I can open doors.
->
-> I cannot walk through them on behalf of others.
+* Own CRs end-to-end.
+* Present updates.
+* Engage stakeholders.
+* Take ADQ-related tasks.
 
-This is fair and defensible.
+Message:
 
----
-
-# Fifth problem: Your own career risk
-
-This is the part most leaders miss.
-
-You are becoming:
-
-* LDQ approver,
-* escalation point,
-* ADQ adoption lead,
-* DM contributor,
-* people manager.
-
-This trajectory can either become:
-
-## Scenario A
-
-Principal engineer growing into senior leadership.
-
-or
-
-## Scenario B
-
-Highly competent operational glue.
-
-Scenario B destroys careers.
-
-Your leverage activities are:
-
-* ADQ adoption,
-* strategic DM forums,
-* cross-product influence,
-* organizational visibility.
-
-Protect those.
-
-Do not sacrifice them to personally solve every CR issue.
+> "I will support you, but I also want you to push yourself into situations where you are leading rather than only supporting."
 
 ---
 
-# Conversation with your team
+# AM
 
-You probably need something close to this:
+## Objective:
 
-> I understand the perception that delivery teams receive greater visibility and rewards.
->
-> There is truth in that because their work aligns closely with strategic priorities.
->
-> The good news is that opportunities to participate in ADQ work exist.
->
-> My commitment is simple:
->
-> * I will advocate for every person fairly.
-> * I will create opportunities for growth and visibility.
-> * I will support people taking ownership outside BAU.
-> * I will recognize proactive contributions.
->
-> What I cannot do is justify promotions or exceptional rewards without evidence that can survive calibration discussions.
->
-> Going forward we will increase ownership transparency, create time for improvement work and expand ADQ participation.
+Reset expectations fairly.
 
-That message is honest, supportive and politically robust.
+Start positively:
+
+> "I want everyone in the team to have growth opportunities, and I want to support you in that journey."
+
+Then:
+
+> "For growth to happen, the foundation is consistent ownership and proactive behaviour."
+
+Be specific:
+
+> "The areas I want you to focus on are:
+>
+> * taking ownership end-to-end,
+> * proactively communicating,
+> * completing tasks without repeated follow-up,
+> * building confidence with stakeholders."
+
+Avoid comparing him to TD.
+
+Message:
+
+> "Let's focus on building strong evidence over the coming months."
 
 ---
 
-# If I were in your position, my resource allocation would look like this:
+# Your personal tone throughout
 
-| Person | Primary Role                           | Stretch Goal                          |
-| ------ | -------------------------------------- | ------------------------------------- |
-| MB     | Run LDQ squad operationally            | Automation and mentoring              |
-| AG     | Independent delivery owner             | ADQ contribution                      |
-| TD     | Grow into independent owner            | Lead first ADQ onboarding             |
-| AM     | Reach baseline expectations            | Demonstrate ownership                 |
-| You    | ADQ visibility and strategic influence | Principal-level organizational impact |
+Three words:
 
-That arrangement aligns organizational incentives, team aspirations and your own career trajectory while minimizing unnecessary stress and emotional labor.
+## 1. Fair
+
+"I will create opportunities for everyone."
+
+## 2. Honest
+
+"I cannot promise outcomes without evidence."
+
+## 3. Supportive
+
+"I will help you build that evidence."
+
+---
+
+The underlying leadership message you are sending is:
+
+> "I am not here to judge the team based on the past. I am here to create the system where future contribution becomes visible."
+
+That is the right narrative for your situation — it protects morale while still resetting expectations.
