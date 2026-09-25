@@ -186,19 +186,52 @@ Requires native-level German (**C1/C2**) and formal degree recognition in German
 
 ## 11. 🏢 Companies You Can Apply To
 
-Mainly Berlin/Germany-focused, with a high proportion of tech and fintech companies that welcome English-speaking talent:
+Based on the companies we've discussed and the data engineer positions found in the searches, I've updated Section 11 to reflect which companies have confirmed openings that match your profile (Ankit Rathi, Principal Data Engineer, 20+ years experience, AWS/Spark/Python/PySpark stack).
+
 
 **Fintech / Internet Unicorns:**
-N26, Revolut, Trade Republic, Wolt, Bolt, Delivery Hero, Flix, Personio, Celonis, AUTO1
+- **N26** — Data Engineer – Platform Engineering (Berlin); AWS, Kubernetes, Terraform, Airflow, dbt 
+- **Revolut** — Software Engineer (Data) (London, Bengaluru, Madrid, Dubai, Bucharest, Dublin, Poland, Portugal, Lithuania, Mexico); Python, SQL, Airflow, Spark/Trino/Snowflake 
+- **Trade Republic** — Analytics Engineering (London); S3/Snowflake/Airflow/Python/DBT, 5+ years 
+- **Wolt** — Senior Software Engineer, Data Platform (Helsinki); Go-based control plane, Terraform/Kubernetes-like platform 
+- **Bolt** — Senior Analytics Engineer (Tallinn); SQL, Python, Spark, dbt, Airflow 
+- **Delivery Hero** — Data Engineer II, Operations – Quick Commerce (Berlin); Python, Docker, Kubernetes, Airflow/MLflow, 4+ years 
 
 **Large Multinational Tech:**
-Google, Amazon, SAP, Siemens, Allianz
+- **Siemens** — (Previously found Data Analyst roles in Prague/Poland) 
+- **HelloFresh** — Senior Data Platform Engineer (Berlin); Python, Terraform, Databricks/Unity Catalog, Spark, Airflow, Kubernetes, AWS 
 
 **Local Star Startups:**
-Zalando, HelloFresh, GetYourGuide, Holidu, FreeNow
+- **Zalando** — Multiple roles: Data Engineer (Berlin; SQL, Python, 3+ yrs) ; Senior CRM Data Engineer (Berlin; Databricks/Spark/Delta Lake, Terraform, 5+ yrs) 
+- **HelloFresh** — See above (also listed as Local Star)
+- **GetYourGuide** — Data Engineer, Traveler Data Engineering (Berlin); SQL, Python, dbt, Spark, 3+ yrs ; Data Engineering Manager, Supply (Berlin); SQL, Python, Databricks/Spark, dbt 
+- **Holidu** — Staff Data Engineer (Munich); Airflow, dbt, Redshift, PySpark, Terraform, 8+ yrs ; Senior Data Engineer/DataOps – Revenue Management (Munich); Python, Terraform, AWS, MLOps 
+- **FreeNow** — Analytics Engineer (Hamburg/Berlin/Barcelona/Athens); SQL, Python, Databricks, Airflow, AWS, Spark 
 
 **Others:**
-adjoe (Adjoa), Emma – The Sleep Company
+- **Flix** — Junior Data Engineer (Remote/Hybrid); Python, SQL, AWS/Snowflake exposure 
+
+---
+
+**No Active Openings Found (in search results):**
+- **Google, Amazon, SAP, Allianz** — No specific data engineer roles surfaced in these searches
+- **Personio** — Senior Data Engineer found but is based in **London (fully remote)** — visa/relocation considerations apply 
+- **Celonis, AUTO1, adjoe, Emma – The Sleep Company** — No relevant data engineer openings appeared in search results
+
+---
+
+**Key Additions from This Search:**
+
+The following companies from our earlier discussions now have **confirmed, profile-matching openings**:
+
+| Company | Role Found | Location |
+|---------|-----------|----------|
+| **N26** | Data Engineer – Platform Engineering | Berlin |
+| **Wolt** | Senior Software Engineer, Data Platform | Helsinki |
+| **Trade Republic** | Analytics Engineering | London |
+| **Bolt** | Senior Analytics Engineer | Tallinn |
+| **FreeNow** | Analytics Engineer | Hamburg/Berlin/Barcelona/Athens |
+
 
 ---
 
