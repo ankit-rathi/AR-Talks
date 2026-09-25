@@ -241,74 +241,121 @@ Requires native-level German (**C1/C2**) and formal degree recognition in German
 
 Based on our discussions and confirmed openings that match your profile (Principal Data Engineer, 20+ years, AWS/Spark/Python/PySpark stack).
 
-### Fintech / Internet Unicorns
+# Weekly Job Search Workflow — Company Watchlist for Ankit Rathi
 
-| Company | Role Found | Location | Key Match |
+Here's a structured system you can use on a weekly basis. You send me your CV (or confirm it hasn't changed) plus this list, and I'll search each company for matching openings.
+
+---
+
+## 📋 Master Company Watchlist
+
+### Tier 1 — Highest Priority (Best Profile Fit)
+
+These are companies with **confirmed, senior-level data engineering roles** that match your Principal/Staff profile. Search these every week.
+
+| # | Company | Why Prioritize | Typical Role Titles |
 |---|---|---|---|
-| **N26** | Data Engineer – Platform Engineering | Berlin | AWS, Kubernetes, Terraform, Airflow, dbt |
-| **Revolut** | Software Engineer (Data) | London, Bengaluru, Madrid, Dubai, Bucharest, Dublin, Poland, Portugal, Lithuania, Mexico | Python, SQL, Airflow, Spark/Trino/Snowflake |
-| **Trade Republic** | Analytics Engineering | London | S3/Snowflake/Airflow/Python/DBT, 5+ yrs |
-| **Wolt** | Senior Software Engineer, Data Platform | Helsinki | Go-based control plane, Terraform/Kubernetes-like platform |
-| **Bolt** | Senior Analytics Engineer | Tallinn | SQL, Python, Spark, dbt, Airflow |
-| **Delivery Hero** | Data Engineer II, Operations – Quick Commerce | Berlin | Python, Docker, Kubernetes, Airflow/MLflow, 4+ yrs |
-| **Billie** | Data Engineer | Berlin | Snowflake, Airflow, dbt, AWS — ML for B2B payments |
-| **Worldline** | Data Engineer – Senior | Warsaw | SQL, Java, cloud, workflow management — payments |
-| **Worldline** | Data Engineer (Cloud) – Middle | Bucharest | Databricks, Power BI — ETL pipelines |
-| **Entain** | Data Engineer (Mid/Senior) | Hybrid | GCP, SQL, Python, Airflow, Kafka |
+| 1 | **Zalando** | Multiple senior data eng roles in Berlin; Databricks/Spark/Delta Lake stack matches your profile | Senior Data Engineer, Data Engineer – Governance, Staff Data Engineer |
+| 2 | **Holidu** | Staff Data Engineer role explicitly wants 8+ yrs; Munich-based | Staff Data Engineer, Senior Data Engineer/DataOps |
+| 3 | **Wolt** | Data Platform team in Helsinki; senior roles with Go/Terraform/K8s | Senior Software Engineer – Data Platform |
+| 4 | **N26** | Berlin fintech; AWS/K8s/Terraform/Airflow/dbt stack | Data Engineer – Platform Engineering |
+| 5 | **HelloFresh** | Berlin; Databricks/Unity Catalog/Spark/Airflow stack | Senior Data Platform Engineer |
+| 6 | **Delivery Hero** | Berlin; Python/Docker/K8s/Airflow/MLflow | Data Engineer II, Senior Data Engineer |
+| 7 | **GetYourGuide** | Berlin; SQL/Python/dbt/Spark/Databricks | Data Engineer, Data Engineering Manager |
+| 8 | **FreeNow** | Berlin/Hamburg/Barcelona/Athens; Databricks/Airflow/AWS/Spark | Analytics Engineer, Senior Data Analyst |
 
-### Large Multinational Tech
+---
 
-| Company | Role Found | Location | Key Match |
+### Tier 2 — Strong Priority (Fintech/Payments/Domain Match)
+
+These match your **banking/fintech/insurance domain** experience. Search every 1–2 weeks.
+
+| # | Company | Why Prioritize | Typical Role Titles |
 |---|---|---|---|
-| **Siemens** | Data Analyst | Prague | SQL, Python, Airflow, dbt, Power BI |
-| **Siemens** | Channel BI Data Analyst | Poland/Czech/Greece/Türkiye | Power BI (DAX), SQL, B2B marketing analytics |
-| **HelloFresh** | Senior Data Platform Engineer | Berlin | Python, Terraform, Databricks/Unity Catalog, Spark, Airflow, Kubernetes, AWS |
-| **HelloFresh** | Senior Data Analyst – Operational Excellence | London | SQL, Python, visualization, LLM utilization |
-| **Swisscom** | Senior Data Engineer – People Analytics | Bern | AWS, Python, PySpark, SQL, data governance |
-| **Swisscom** | Data Engineer for Cloud Transformation | Bern/Zurich | AWS, Python, ETL — **requires German** |
-| **Rocket Software** | Staff Data Engineer | Los Angeles, USA | 9+ yrs, AWS Lambda, Python, Airflow, data governance |
-| **Rocket Software** | Data Engineer, Data Governance & Compliance | Detroit, USA | 5+ yrs, data quality, security, hybrid cloud ELT |
+| 9 | **Guidewire Software** | P&C insurance domain; AWS/Spark/Iceberg/dbt; ML pipelines | Senior Data Engineer, Staff Data Engineer |
+| 10 | **Traveloka** | Staff/Lead role requires 10+ yrs; BigQuery/dbt | Staff Data Engineer, Lead Data Engineer |
+| 11 | **Billie** | Berlin B2B payments fintech; Snowflake/Airflow/dbt/AWS | Data Engineer, Senior Data Engineer |
+| 12 | **Worldline** | Payments tech; multiple EU locations | Senior Data Engineer, Data Engineer – Cloud |
+| 13 | **Trade Republic** | Berlin fintech; S3/Snowflake/Airflow/Python/dbt | Analytics Engineer, Data Engineer |
+| 14 | **Rocket Software** | Staff Data Engineer role; AWS Lambda/Python/Airflow | Staff Data Engineer, Data Engineer – Governance |
+| 15 | **Swisscom** | Switzerland; AWS/PySpark/SQL/data governance | Senior Data Engineer, Data Platform Engineer |
 
-### Local Star Startups
+---
 
-| Company | Role Found | Location | Key Match |
+### Tier 3 — Selective Priority (Broader Tech / Regional)
+
+Search every 2–3 weeks, or when you want to expand options.
+
+| # | Company | Why Consider | Typical Role Titles |
 |---|---|---|---|
-| **Zalando** | Data Engineer | Berlin | SQL, Python, 3+ yrs |
-| **Zalando** | Senior CRM Data Engineer | Berlin | Databricks/Spark/Delta Lake, Terraform, 5+ yrs |
-| **Zalando** | Senior Data Engineer – Lounge by Zalando | Berlin | Spark, Kafka, Python/Java, ML infrastructure |
-| **Zalando** | Data Engineer – Data Governance & Data Quality | Berlin | AWS (S3, Redshift), Databricks (PySpark), governance |
-| **Zalando** | Senior Data Engineer (Tradebyte) | Ansbach | Databricks, Delta Live Tables, Unity Catalog, PySpark |
-| **GetYourGuide** | Data Engineer, Traveler Data Engineering | Berlin | SQL, Python, dbt, Spark, 3+ yrs |
-| **GetYourGuide** | Data Engineering Manager, Supply | Berlin | SQL, Python, Databricks/Spark, dbt |
-| **Holidu** | Staff Data Engineer | Munich | Airflow, dbt, Redshift, PySpark, Terraform, 8+ yrs |
-| **Holidu** | Senior Data Engineer/DataOps – Revenue Management | Munich | Python, Terraform, AWS, MLOps |
-| **Holidu** | Data Analytics Team Lead – Marketing Technology | Hybrid | 7+ yrs, SQL, Python, marketing analytics |
-| **FreeNow** | Senior Data Analyst | Berlin | SQL, Python, ETL, AI/LLM interest |
-| **FreeNow** | Analytics Engineer | Hamburg/Berlin/Barcelona/Athens | SQL, Python, Databricks, Airflow, AWS, Spark |
-| **FreeNow** | Product Data Analyst | Hamburg/Berlin/Barcelona | SQL, Python/R, A/B testing, Tableau/Mixpanel |
-| **Guidewire Software** | Data Engineer (DataOps & Infrastructure) | (Remote/US) | AWS (S3, EMR, Glue, Redshift), dbt, Iceberg, Spark |
-| **Guidewire Software** | Senior Data Engineer | (Remote/US) | 7–10+ yrs, DBT, Iceberg, AWS, ML pipelines |
-| **Rakuten Symphony** | Data – AI Platform Engineer (Lead) | Bangalore | 8+ yrs, 3+ yrs leading, ML/AI pipelines, LLM data prep |
-| **Rakuten Symphony** | Data Engineer | Bangalore | 3–8 yrs — **Java/Scala required, not Python** |
+| 16 | **Bolt** | Tallinn; SQL/Python/Spark/dbt/Airflow | Senior Analytics Engineer |
+| 17 | **Revolut** | Multiple global locations; Python/SQL/Airflow/Spark | Software Engineer (Data), Data Engineer |
+| 18 | **Entain** | GCP/SQL/Python/Airflow/Kafka | Data Engineer (Mid/Senior) |
+| 19 | **Flix** | Multiple data roles; Snowflake/Power BI/AWS | Commercial Data Analyst, Senior CRM Data Analyst |
+| 20 | **Rakuten Symphony** | Bangalore-based (if you'd consider India); ML/AI pipelines | Data – AI Platform Engineer (Lead) |
+| 21 | **Siemens** | Prague/Poland; SQL/Python/Airflow/dbt/Power BI | Data Analyst, Channel BI Data Analyst |
+| 22 | **Zalando (Tradebyte)** | Ansbach; Databricks/Delta Live Tables/Unity Catalog | Senior Data Engineer |
 
-### Others
+---
 
-| Company | Role Found | Location | Key Match |
-|---|---|---|---|
-| **Flix** | Commercial Data Analyst | Revenue Mgmt Americas | SQL (Snowflake), Power BI (DAX), Excel, 5+ yrs |
-| **Flix** | Senior Data Analyst – CRM | Global | SQL (Snowflake), Power BI, CRM KPIs, 5+ yrs |
-| **Flix** | Senior HR Data Analyst | (Global) | SQL, Snowflake, Power BI, Python/R, dbt/Airflow |
-| **Flix** | Data Platform Engineer | Germany | Kafka, Snowflake, AWS, Kubernetes, Terraform |
-| **Flix** | Data Engineer – Marketing | (Global) | Python, SQL, Airflow, AWS, Terraform, CI/CD |
-| **Flix** | Junior Data Engineer | Remote/Hybrid | Python, SQL, AWS/Snowflake exposure |
-| **AUTO1 Group** | Business Data Analyst | Iberia | 2+ yrs, Excel/Sheets, SQL/Python, English C1 |
-| **Traveloka** | Staff / Lead Data Engineer | Shanghai/Singapore | **10+ yrs**, BigQuery, dbt — large-scale DW from scratch |
-| **Personio** | Senior Data Engineer | London (fully remote) | Visa/relocation considerations apply |
+### Tier 4 — Opportunistic (Check Monthly)
 
-### No Active Openings Found (in our searches)
+Companies from earlier lists where we haven't found active openings recently, but worth periodic checks.
 
-- **Google, Amazon, SAP, Allianz** — No specific data engineer roles surfaced
-- **Celonis, adjoe, Emma – The Sleep Company** — No relevant data engineer openings appeared
+| # | Company | Notes |
+|---|---|---|
+| 23 | **Personio** | Senior Data Engineer found in London (remote) — check for Germany roles |
+| 24 | **Celonis** | Process mining; no active DE role found — check monthly |
+| 25 | **AUTO1 Group** | Business Data Analyst in Iberia; check for senior DE roles |
+| 26 | **adjoe** | Hamburg; no active DE role found — check monthly |
+| 27 | **Emma – The Sleep Company** | No active DE role found — check monthly |
+| 28 | **Google** | No specific DE role surfaced — check monthly for L5/L6 Data Engineer |
+| 29 | **Amazon** | No specific DE role surfaced — check monthly for Data Engineer II/III |
+| 30 | **SAP** | No specific DE role surfaced — check monthly |
+| 31 | **Allianz** | Data Management Analyst in UK — check for Germany roles |
+| 32 | **Agillic / Agilytic** | Could not confirm; Agilytic requires French/Dutch |
+| 33 | **smartmicro** | Radar sensor tech; not yet searched |
+| 34 | **Xing** | Professional network (not a direct employer target) — use for search |
+
+---
+
+## 🔄 Weekly Workflow
+
+Here's how we'll work together each week:
+
+### What you send me (every Monday, or any day):
+
+```
+1. Updated CV (if changed) — or say "CV unchanged"
+2. Any new companies to add to the watchlist
+3. Any companies to remove (e.g., you applied and got rejected)
+4. Your priority focus for the week (e.g., "Germany only", "fintech only", "remote only")
+```
+
+### What I'll do for you:
+
+```
+1. Search each Tier 1 company for new data engineering openings
+2. Search Tier 2 companies every other week
+3. Search Tier 3 companies monthly
+4. Spot-check Tier 4 monthly
+5. Return a table of:
+   - Company | Role | Location | Key Requirements | Match Score | Application Link
+6. Flag any roles where you're a strong fit (with reasons)
+7. Flag any roles that require German or have visa concerns
+8. Note deadlines or urgency
+```
+
+### Match Score Definition:
+
+| Score | Meaning |
+|---|---|
+| ⭐⭐⭐⭐⭐ | 90%+ match — apply immediately |
+| ⭐⭐⭐⭐ | 75–90% match — strong candidate |
+| ⭐⭐⭐ | 60–75% match — worth applying |
+| ⭐⭐ | 40–60% match — stretch role |
+| ⭐ | <40% match — skip unless desperate |
+
 
 ---
 
